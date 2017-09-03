@@ -1,0 +1,228 @@
+[
+	{
+		"title":"Acrobatics",
+		"ability":"Dexterity",
+		"untrained":true,
+		"description":"You can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows you to move at half speed across such surfaces—only one check is needed per round. Use the following table to determine the base DC, which is then modif ied by the Acrobatics skill modif iers noted on page 89. While you are using Acrobatics in this way, you are considered f lat-footed and lose your Dexterity bonus to your AC (if any). If you take damage while using Acrobatics, you must immediately make another Acrobatics check at the same DC to avoid falling or being knocked prone.
+		In addition, you can move through a threatened square without provoking an attack of opportunity from an enemy by using Acrobatics. When moving in this way, you move at half speed. You can move at full speed by increasing the DC of the check by 10. You cannot use Acrobatics to move past foes if your speed is reduced due to carrying a medium or heavy load or wearing medium or heavy armor. If an ability allows you to move at full speed under such conditions, you can use Acrobatics to move past foes. You can use Acrobatics in this way while prone, but doing so requires a full-round action to move 5 feet, and the DC is increased by 5. If you attempt to move through an enemy’s space and fail the check, you lose the move action and provoke an attack of opportunity. 
+		Finally, you can use the Acrobatics skill to make jumps or to soften a fall. The base DC to make a jump is equal to the distance to be crossed (if horizontal) or four times the height to be reached (if vertical). These DCs double if you do not have at least 10 feet of space to get a running start. The only Acrobatics modif iers that apply are those concerning the surface you are jumping from. If you fail this check by 4 or less, you can attempt a DC 20 Ref lex save to grab hold of the other side after having missed the jump. If you fail by 5 or more, you fail to make the jump and fall (or land prone, in the case of a vertical jump). Creatures with a base land speed above 30 feet receive a +4 racial bonus on Acrobatics checks made to jump for every 10 feet of their speed above 30 feet. Creatures with a base land speed below 30 feet receive a –4 racial penalty on Acrobatics checks made to jump for every 10 feet of their speed below 30 feet. No jump can allow you to exceed your maximum movement for the round. For a running jump, the result of your Acrobatics check indicates the distance traveled in the jump (and if the check fails, the distance at which you actually land and fall prone). Halve this result for a standing long jump to determine where you land.When you deliberately fall any distance, even as a result of a missed jump, a DC 15 Acrobatics skill check allows you to ignore the f irst 10 feet fallen, although you still end up prone if you take damage from a fall."
+	},
+	{
+		"title":"Appraise",
+		"ability":"Intelligence",
+		"untrained":true,
+		"description":"A DC 20 Appraise check determines the value of a common item. If you succeed by 5 or more, you also determine if the item has magic properties, although this success does not grant knowledge of the magic item’s abilities. If your fail the check by less than 5, you determine the price of that item to within 20% of its actual value. If you fail this check by 5 or more, the price is wildly inaccurate, subject to GM discretion. Particularly rare or exotic items might increase the DC of this check by 5 or more.You can also use this check to determine the most valuable item visible in a treasure hoard. The DC of this check is generally 20 but can increase to as high as 30 for a particularly large hoard."
+	},
+	{
+		"title":"Bluff",
+		"ability":"Charisma",
+		"untrained":true,
+		"description":"Bluff is an opposed skill check against your opponent’s Sense Motive skill. If you use Bluff to fool someone, with a successful check you convince your opponent that what you are saying is true. Bluff checks are modif ied depending upon the believability of the lie. 
+		You can use Bluff to feint in combat, causing your opponent to be denied his Dexterity bonus to his AC against your next attack. The DC of this check is equal to 10 + your opponent’s base attack bonus + your opponent’s Wisdom modif ier. If your opponent is trained in Sense Motive, the DC is instead equal to 10 + your opponent’s Sense Motive bonus, if higher
+		You can use Bluff to pass hidden messages along to another character without others understanding your true meaning by using innuendo to cloak your actual message. The DC of this check is 15 for simple messages and 20 for complex messages. If you are successful, the target automatically understands you, assuming you are communicating in a language that it understands. If your check fails by 5 or more, you deliver the wrong message. Other creatures that receive the message can decipher it by succeeding at an opposed Sense Motive check against your Bluff result. "
+	},
+	{
+		"title":"Climb",
+		"ability":"Strength",
+		"untrained":true,
+		"description":"With a successful Climb check, you can advance up, down, or across a slope, wall, or other steep incline (or even across a ceiling, provided it has handholds) at one-quarter your normal speed. A slope is considered to be any incline at an angle measuring less than 60 degrees; a wall is any incline at an angle measuring 60 degrees or more.A Climb check that fails by 4 or less means that you make no progress, and one that fails by 5 or more means that you fall from whatever height you have already attained.The DC of the check depends on the conditions of the climb. Compare the task with those on the following table to determine an appropriate DC."
+	},
+	{
+		"title":"Craft",
+		"ability":"Intelligence",
+		"untrained":true,
+		"description":"You can practice your trade and make a decent living, earning half your check result in gold pieces per week of dedicated work. You know how to use the tools of your trade, how to perform the craft’s daily tasks, how to supervise untrained helpers, and how to handle common problems. (Untrained laborers and assistants earn an average of 1 silver piece per day.)
+		The basic function of the Craft skill, however, is to allow you to make an item of the appropriate type. The DC depends on the complexity of the item to be created. The DC, your check result, and the price of the item determine how long it takes to make a particular item. The item’s f inished price also determines the cost of raw materials."
+	},
+	{
+		"title":"Diplomacy",
+		"ability":"Charisma",
+		"untrained":true,
+		"description":"You can change the initial attitudes of nonplayer characters with a successful check. The DC of this check depends on the creature’s starting attitude toward you, adjusted by its Charisma modif ier. If you succeed, the character’s attitude toward you is improved by one step. For every 5 by which your check result exceeds the DC, the character’s attitude toward you increases by one additional step. A creature’s attitude cannot be shifted more than two steps up in this way, although the GM can override this rule in some situations. If you fail the check by 4 or less, the character’s attitude toward you is unchanged. If you fail by 5 or more, the character’s attitude toward you is decreased by one step.
+		You cannot use Diplomacy against a creature that does not understand you or has an Intelligence of 3 or less. Diplomacy is generally ineffective in combat and against creatures that intend to harm you or your allies in the immediate future. Any attitude shift caused through Diplomacy generally lasts for 1d4 hours but can last much longer or shorter depending upon the situation (GM discretion)"
+	},
+	{
+		"title":"Disable Device",
+		"ability":"Dexterity",
+		"untrained":false,
+		"description":"When disarming a trap or other device, the Disable Device check is made secretly, so that you don’t necessarily know whether you’ve succeeded.The DC depends on how tricky the device is. If the check succeeds, you disable the device. If it fails by 4 or less, you have failed but can try again. If you fail by 5 or more, something goes wrong. If the device is a trap, you trigger it. If you’re attempting some sort of sabotage, you think the device is disabled, but it still works normally.You also can rig simple devices such as saddles or wagon wheels to work normally for a while and then fail or fall off some time later (usually after 1d4 rounds or minutes of use)."
+	},
+	{
+		"title":"Disguise",
+		"ability":"Charisma",
+		"untrained":true,
+		"description":"Your Disguise check result determines how good the disguise is, and it is opposed by others’ Perception check results. If you don’t draw any attention to yourself, others do not get to make Perception checks. If you come to the attention of people who are suspicious (such as a guard who is watching commoners walking through a city gate), it can be assumed that such observers are taking 10 on their Perception checks.You get only one Disguise check per use of the skill, even if several people make Perception checks against it. The Disguise check is made secretly, so that you can’t be sure how good the result is."
+	},
+	{
+		"title":"Escape Artist",
+		"ability":"Dexterity",
+		"untrained":true,
+		"description":"Your training allows you to slip out of bonds and escape from grapples."
+	},
+	{
+		"title":"Fly",
+		"ability":"Dexterity",
+		"untrained":true,
+		"description":"You are skilled at f lying, through either the use of wings or magic, and can perform daring or complex maneuvers while airborne. Note that this skill does not give you the ability to f ly."
+	},
+	{
+		"title":"Handle Animal",
+		"ability":"Charisma",
+		"untrained":false,
+		"description":"You are trained at working with animals, and can teach them tricks, get them to follow your simple commands, or even domesticate them."
+	},
+	{
+		"title":"Heal",
+		"ability":"Wisdom",
+		"untrained":true,
+		"description":"You are skilled at tending to wounds and ailments."
+	},
+	{
+		"title":"Intimidate",
+		"ability":"Charisma",
+		"untrained":true,
+		"description":"You can use this skill to frighten your opponents or to get them to act in a way that benef its you. This skill includes verbal threats and displays of prowess."
+	},
+	{
+		"title":"Knowledge Arcane",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 Arcana(ancientmysteries,magictraditions,arcanesymbols, constructs, dragons, magical beasts)"
+	},
+	{
+		"title":"Knowledge Dungeoneering",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 Dungeoneering(aberrations,caverns,oozes,spelunking)"
+	},
+	{
+		"title":"Knowledge Engineering",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 Engineering(buildings,aqueducts,bridges,fortifications)"
+	},
+	{
+		"title":"Knowledge Geography",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 	 Geography(lands,terrain,climate,people)"
+	},
+	{
+		"title":"Knowledge History",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+		History(wars,colonies,migrations,foundingofcities)"
+	},
+	{
+		"title":"Knowledge Local",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+		Local(legends,personalities,inhabitants,laws,customs, traditions, humanoids)"
+	},
+	{
+		"title":"Knowledge Nature",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 Nature(animals,fey,monstroushumanoids,plants,seasons and cycles, weather, vermin)"
+	},
+	{
+		"title":"Knowledge Nobility",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 	 Nobility(lineages,heraldry,personalities,royalty)"
+	},
+	{
+		"title":"Knowledge Planes",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 	 Planes(theInnerPlanes,theOuterPlanes,theAstralPlane, the Ethereal Plane, outsiders, planar magic)"
+	},
+	{
+		"title":"Knowledge Religion",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are educated in a f ield of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.
+			 	 Religion(godsandgoddesses,mythichistory,ecclesiastictradition, holy symbols, undead)"
+	},
+	{
+		"title":"Linguistics",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are skilled at working with language, in both its spoken and written forms. You can speak multiple languages, and can decipher nearly any tongue given enough time. Your skill in writing allows you to create and detect forgeries as well."
+	},
+	{
+		"title":"Perception",
+		"ability":"Wisdom",
+		"untrained":true,
+		"description":"Your senses allow you to notice f ine details and alert you to danger. Perception covers all f ive senses, including sight, hearing, touch, taste, and smell."
+	},
+	{
+		"title":"Perform",
+		"ability":"Charisma",
+		"untrained":true,
+		"description":"You are skilled at one form of entertainment, from singing to acting to playing an instrument. Like Craft, Knowledge, and Profession, Perform is actually a number of separate skills. You could have several Perform skills, each with its own ranks."
+	},
+	{
+		"title":"Profession",
+		"ability":"Wisdom",
+		"untrained":false,
+		"description":"You are skilled at a specif ic job. Like Craft, Knowledge, and Perform, Profession is actually a number of separate skills. You could have several Profession skills, each with its own ranks. While a Craft skill represents ability in creating an item, a Profession skill represents an aptitude in a vocation requiring a broader range of less specif ic knowledge. The most common Profession skills are architect, baker, barrister, brewer, butcher, clerk, cook, courtesan, driver, engineer, farmer, f isherman, gambler, gardener, herbalist, innkeeper, librarian, merchant, midwife, miller, miner, porter, sailor, scribe, shepherd, stable master, soldier, tanner, trapper, and woodcutter."
+	},
+	{
+		"title":"Ride",
+		"ability":"Dexterity",
+		"untrained":true,
+		"description":"You are skilled at riding mounts, usually a horse, but possibly something more exotic, like a griffon or pegasus. If you attempt to ride a creature that is ill suited as a mount, you take a – 5 penalty on your Ride checks."
+	},
+	{
+		"title":"Sense Motive",
+		"ability":"Wisdom",
+		"untrained":true,
+		"description":"You are skilled at detecting falsehoods and true intentions. A successful check lets you avoid being bluffed (see the Bluff skill). You can also use this skill to determine when “something is up” (that is, something odd is going on) or to assess someone’s trustworthiness."
+	},
+	{
+		"title":"Sleight of Hand",
+		"ability":"Dexterity",
+		"untrained":false,
+		"description":"Your training allows you to pick pockets, draw hidden weapons, and take a variety of actions without being noticed. A DC 10 Sleight of Hand check lets you palm a coin-sized, unattended object. Performing a minor feat of legerdemain, such as making a coin disappear, also has a DC of 10 unless an observer is determined to note where the item went.When you use this skill under close observation, your skill check is opposed by the observer’s Perception check. The observer’s success doesn’t prevent you from performing the action, just from doing it unnoticed."
+	},
+	{
+		"title":"Spellcraft",
+		"ability":"Intelligence",
+		"untrained":false,
+		"description":"You are skilled at the art of casting spells, identifying magic items, crafting magic items, and identifying spells as they are being cast. Spellcraft is used whenever your knowledge and skill of the technical art of casting a spell or crafting a magic item comes into question. This skill is also used to identify the properties of magic items in your possession through the use of spells such as detect magic and identify. The DC of this check varies depending upon the task at hand."
+	},
+	{
+		"title":"Stealth",
+		"ability":"Dexterity",
+		"untrained":true,
+		"description":"You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. This skill covers hiding and moving silently. Your Stealth check is opposed by the Perception check of anyone who might notice you. Creatures that fail to beat your Stealth check are not aware of you and treat you as if you had total concealment. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your normal speed, you take a – 5 penalty. It’s impossible to use Stealth while attacking, running, or charging."
+	},
+	{
+		"title":"Survival",
+		"ability":"Wisdom",
+		"untrained":true,
+		"description":"You are skilled at surviving in the wild and at navigating  in the wilderness. You also excel at following trails and tracks left by others. You can keep yourself and others safe and fed in the wild. The table below gives the DCs for various tasks that require Survival checks."
+	},
+	{
+		"title":"Swim",
+		"ability":"Strength",
+		"untrained":true,
+		"description":"You know how to swim and can do so even in stormy water. Make a Swim check once per round while you are in the water. Success means you may swim at up to half your speed (as a full-round action) or at a quarter of your speed (as a move action). If you fail by 4 or less, you make no progress. If you fail by 5 or more, you go underwater."
+	},
+	{
+		"title":"Use Magic Device",
+		"ability":"Charisma",
+		"untrained":false,
+		"description":"You are skilled at activating magic items, even if you are not otherwise trained in their use. You can use this skill to read a spell or to activate a magic item. Use Magic Device lets you use a magic item as if you had the spell ability or class features of another class, as if you were a different race, or as if you were of a different alignment."
+	}
+]
