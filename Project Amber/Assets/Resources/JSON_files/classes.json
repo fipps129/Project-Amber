@@ -560,40 +560,829 @@
 				At 7th level, a bard can start a bardic performance as a move action instead of a standard action. At 13th level, a bard can start a bardic performance as a swift action. Each bardic performance has audible components, visual components, or both.If a bardic performance has audible components, the targets must be able to hear the bard for the performance to have any effect, and many such performances are language dependent (as noted in the description). A deaf bard has a 20% chance to fail when attempting to use a bardic performance with an audible component. If he fails this check, the attempt still counts against his daily limit. Deaf creatures are immune to bardic performances with audible components.If a bardic performance has a visual component, the targets must have line of sight to the bard for the performance to have any effect. A blind bard has a 50% chance to fail when attempting to use a bardic performance with a visual component. If he fails this check, the attempt still counts against his daily limit. Blind creatures are immune to bardic performances with visual components."
 			},
 			{
-				"title":"",
-				"description":""
+				"title":"Cantrips",
+				"description":"Bards learn a number of cantrips, or 0-level spells. These spells are cast like any other spell, but they do not consume any slots and may be used again."
 			},
 			{
-				"title":"",
-				"description":""
+				"title":"Versatile Performance",
+				"description":"At 2nd level, a bard can choose one type of Perform skill. He can use his bonus in that skill in place of his bonus in associated skills. When substituting in this way, the bard uses his total Perform skill bonus, including class skill bonus, in place of its associated skill’s bonus, whether or not he has ranks in that skill or if it is a class skill. At 6th level, and every 4 levels thereafter, the bard can select an additional type of Perform to substitute. \n
+				The types of Perform and their associated skills are: Act (Bluff, Disguise), Comedy (Bluff, Intimidate), Dance (Acrobatics, Fly), Keyboard Instruments (Diplomacy, Intimidate), Oratory (Diplomacy, Sense Motive), Percussion (Handle Animal, Intimidate), Sing (Bluff, Sense Motive), String (Bluff, Diplomacy), and Wind (Diplomacy, Handle Animal)."
 			},
 			{
-				"title":"",
-				"description":""
+				"title":"Well-Versed",
+				"description":"At 2nd level, the bard becomes resistant to the bardic performance of others, and to sonic effects in general. The bard gains a +4 bonus on saving throws made against bardic performance, sonic, and language-dependent effects."
 			},
 			{
-				"title":"",
-				"description":""
+				"title":"Lore Master",
+				"description":"At 5th level, the bard becomes a master of lore and can take 10 on any Knowledge skill check that he has ranks in. A bard can choose not to take 10 and can instead roll normally. In addition, once per day, the bard can take 20 on any Knowledge skill check as a standard action. He can use this ability one additional time per day for every six levels he possesses beyond 5th, to a maximum of three times per day at 17th level."
 			},
 			{
-				"title":"",
-				"description":""
+				"title":"Jack-of-All-Trades",
+				"description":"At 10th level, the bard can use any skill, even if the skill normally requires him to be trained. At 16th level, the bard considers all skills to be class skills. At 19th level, the bard can take 10 on any skill check, even if it is not normally allowed."
+			}
+		],
+		"ex-class":""
+
+	},
+	{
+		"title":"Cleric",
+		"enum":"Cleric",
+		"description":"In faith and the miracles of the divine, many f ind a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and inf luence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conf lict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.",
+		"role":"More than capable of upholding the honor of their deities in battle, clerics often prove stalwart and capable combatants. Their true strength lies in their capability to draw upon the power of their deities, whether to increase their own and their allies’ prowess in battle, to vex their foes with divine magic, or to lend healing to companions in need. \n As their powers are inf luenced by their faith, all clerics must focus their worship upon a divine source. While the vast majority of clerics revere a specif ic deity, a small number dedicate themselves to a divine concept worthy of devotion—such as battle, death, justice, or knowledge—free of a deific abstraction.",
+		"alignment":"Any",
+		"hitdie":8,
+		"skills":[
+			"Appraise",
+			"Craft",
+			"Diplomacy",
+			"Heal",
+			"Knowledge Arcana",
+			"Knowledge History",
+			"Knowledge Nobility",
+			"Knowledge Planes",
+			"Knowledge Religion",
+			"Linguistics",
+			"Profession",
+			"Sense Motive",
+			"Spellcraft"
+		],
+		"ranks":2,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":2,
+				"ref":0,
+				"will":2,
+				"special":[
+					"Aura",
+					"Channel Energy",
+					"Domains",
+					"Orisons"
+				]
 			},
 			{
-				"title":"",
-				"description":""
+				"level":2,
+				"bab":"1",
+				"fort":3,
+				"ref":0,
+				"will":3,
+				"special":[
+				]
 			},
 			{
-				"title":"",
-				"description":""
+				"level":3,
+				"bab":"2",
+				"fort":3,
+				"ref":1,
+				"will":3,
+				"special":[
+					"Channel Energy"
+				]
 			},
 			{
-				"title":"",
-				"description":""
+				"level":4,
+				"bab":"3",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+				]
 			},
 			{
-				"title":"",
-				"description":""
+				"level":5,
+				"bab":"3",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":6,
+				"bab":"4",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+				]
+			},
+			{
+				"level":7,
+				"bab":"5",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":8,
+				"bab":"6/1",
+				"fort":6,
+				"ref":2,
+				"will":6,
+				"special":[
+				]
+			},
+			{
+				"level":9,
+				"bab":"6/1",
+				"fort":6,
+				"ref":3,
+				"will":6,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":10,
+				"bab":"7/2",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+				]
+			},
+			{
+				"level":11,
+				"bab":"8/3",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":12,
+				"bab":"9/4",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+				]
+			},
+			{
+				"level":13,
+				"bab":"9/4",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":14,
+				"bab":"10/5",
+				"fort":9,
+				"ref":4,
+				"will":9,
+				"special":[
+				]
+			},
+			{
+				"level":15,
+				"bab":"11/6/1",
+				"fort":9,
+				"ref":5,
+				"will":9,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":16,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+				]
+			},
+			{
+				"level":17,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":18,
+				"bab":"13/8/3",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+				]
+			},
+			{
+				"level":19,
+				"bab":"14/9/4",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+					"Channel Energy"
+				]
+			},
+			{
+				"level":20,
+				"bab":"15/10/5",
+				"fort":12,
+				"ref":6,
+				"will":12,
+				"special":[
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Clerics are prof icient with all simple weapons, light armor, medium armor, and shields (except tower shields). Clerics are also prof icient with the favored weapon of their deity.",
+			},
+			{
+				"title":"Aura",
+				"description":"A cleric of a chaotic, evil, good, or lawful deity has a particularly powerful aura corresponding to the deity’s alignment (see the detect evil spell for details).",
+			},
+			{
+				"title":"Spells",
+				"description":"A cleric casts divine spells which are drawn from the cleric spell list presented in Chapter 10. Her alignment, however, may restrict her from casting certain spells opposed to her moral or ethical beliefs; see chaotic, evil, good, and lawful spells on page 41. A cleric must choose and prepare her spells in advance. \n To prepare or cast a spell, a cleric must have a Wisdom score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a cleric’s spell is 10 + the spell level + the cleric’s Wisdom modif ier. \n Like other spellcasters, a cleric can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table 3– 5. In addition, she receives bonus spells per day if she has a high Wisdom score. \n Clerics meditate or pray for their spells. Each cleric must choose a time when she must spend 1 hour each day in quiet contemplation or supplication to regain her daily allotment of spells. A cleric may prepare and cast any spell on the cleric spell list, provided that she can cast spells of that level, but she must choose which spells to prepare during her daily meditation. \n <b> A cleric can’t cast spells of an alignment opposed to her own or her deity’s (if she has one). Spells associated with particular alignments are indicated by the chaotic, evil, good, and lawful descriptors in their spell descriptions. </b>"
+			},
+			{
+				"title":"Channel Energy",
+				"description":"Regardless of alignment, any cleric can release a wave of energy by channeling the power of her faith through her holy (or unholy) symbol. This energy can be used to cause or heal damage, depending on the type of energy channeled and the creatures targeted. A good cleric (or one who worships a good deity) channels positive energy and can choose to deal damage to undead creatures or to heal living creatures. An evil cleric (or one who worships an evil deity) channels negative energy and can choose to deal damage to living creatures or to heal undead creatures. A neutral cleric who worships a neutral deity (or one who is not devoted to a particular deity) must choose whether she channels positive or negative energy. Once this choice is made, it cannot be reversed. This decision also determines whether the cleric casts spontaneous cure or inf lict spells (see spontaneous casting). Channeling energy causes a burst that affects all creatures of one type (either undead or living) in a 30-foot radius centered on the cleric. The amount of damage dealt or healed is equal to 1d6 points of damage plus 1d6 points of damage for every two cleric levels beyond 1st (2d6 at 3rd, 3d6 at 5th, and so on). Creatures that take damage from channeled energy receive a Will save to halve the damage. The DC of this save is equal to 10 + 1/2 the cleric’s level + the cleric’s Charisma modif ier. Creatures healed by channeled energy cannot exceed their maximum hit point total—all excess healing is lost. A cleric may channel energy a number of times per day equal to 3 + her Charisma modif ier. This is a standard action that does not provoke an attack of opportunity. A cleric can choose whether or not to include herself in this effect. A cleric must be able to present her holy symbol to use this ability."
+			},
+			{
+				"title":"Domains",
+				"description":"A cleric’s deity inf luences her alignment, what magic she can perform, her values, and how others see her. A cleric chooses two domains from among those belonging to her deity. A cleric can select an alignment domain (Chaos, Evil, Good, or Law) only if her alignment matches that domain. If a cleric is not devoted to a particular deity, she still selects two domains to represent her spiritual inclinations and abilities (subject to GM approval). The restriction on alignment domains still applies.Each domain grants a number of domain powers, dependent upon the level of the cleric, as well as a number of bonus spells. A cleric gains one domain spell slot for each level of cleric spell she can cast, from 1st on up. Each day, a cleric can prepare one of the spells from her two domains in that slot. If a domain spell is not on the cleric spell list, a cleric can prepare it only in her domain spell slot. Domain spells cannot be used to cast spells spontaneously. In addition, a cleric gains the listed powers from both of her domains, if she is of a high enough level. Unless otherwise noted, using a domain power is a standard action. Cleric domains are listed at the end of this class entry."
+			},
+			{
+				"title":"Orisons",
+				"description":"Clerics can prepare a number of orisons, or 0-level spells, each day, as noted on Table 3– 5 under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again."
+			},
+			{
+				"title":"Spontaneous Casting",
+				"description":"A good cleric (or a neutral cleric of a good deity) can channel stored spell energy into healing spells that she did not prepare ahead of time. The cleric can “lose” any prepared spell that is not an orison or domain spell in order to cast any cure spell of the same spell level or lower (a cure spell is any spell with “cure” in its name). An evil cleric (or a neutral cleric who worships an evil deity) can’t convert prepared spells to cure spells but can convert them to inf lict spells (an inf lict spell is one with “inf lict” in its name).A cleric who is neither good nor evil and whose deity is neither good nor evil can convert spells to either cure spells or inf lict spells (player’s choice). Once the player makes this choice, it cannot be reversed. This choice also determines whether the cleric channels positive or negative energy (see Channel Energy)."
+			},
+			{
+				"title":"Bonus Languages",
+				"description":"A cleric’s bonus language options include Celestial, Abyssal, and Infernal (the languages of good, chaotic evil, and lawful evil outsiders, respectively). These choices are in addition to the bonus languages available to the character because of her race."
+			}
+		],
+		"ex-class":"A cleric who grossly violates the code of conduct required by her god loses all spells and class features, except for armor and shield prof iciencies and prof iciency with simple weapons. She cannot thereafter gain levels as a cleric of that god until she atones for her deeds (see the atonement spell description)."
+
+	},
+	{
+		"title":"Druid",
+		"enum":"Druid",
+		"description":"Within the purity of the elements and the order of the wilds lingers a power beyond the marvels of civilization. Furtive yet undeniable, these primal magics are guarded over by servants of philosophical balance known as druids. Allies to beasts and manipulators of nature, these often misunderstood protectors of the wild strive to shield their lands from all who would threaten them and prove the might of the wilds to those who lock themselves behind city walls. Rewarded for their devotion with incredible powers, druids gain unparalleled shape-shifting abilities, the companionship of mighty beasts, and the power to call upon nature’s wrath. The mightiest temper powers akin to storms, earthquakes, and volcanoes with primeval wisdom long abandoned and forgotten by civilization. ",
+		"role":"While some druids might keep to the fringe of battle, allowing companions and summoned creatures to f ight while they confound foes with the powers of nature, others transform into deadly beasts and savagely wade into combat. Druids worship personif ications of elemental forces, natural powers, or nature itself. Typically this means devotion to a nature deity, though druids are just as likely to revere vague spirits, animalistic demigods, or even specif ic awe-inspiring natural wonders.",
+		"alignment":"Neutral",
+		"hitdie":8,
+		"skills":[
+			"Climb",
+			"Craft",
+			"Fly",
+			"Handle Animal",
+			"Heal",
+			"Knowledge Geography",
+			"Knowledge Nature",
+			"Perception",
+			"Profession",
+			"Ride",
+			"Spellcraft",
+			"Survival",
+			"Swim"
+		],
+		"ranks":4,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":2,
+				"ref":0,
+				"will":2,
+				"special":[
+					"Nature Bond",
+					"Nature Sense",
+					"Orisons",
+					"Wild Empathy"
+				]
+			},
+			{
+				"level":2,
+				"bab":"1",
+				"fort":3,
+				"ref":0,
+				"will":3,
+				"special":[
+					"Woodland Stride"
+				]
+			},
+			{
+				"level":3,
+				"bab":"2",
+				"fort":3,
+				"ref":1,
+				"will":3,
+				"special":[
+					"Trackless Step"
+				]
+			},
+			{
+				"level":4,
+				"bab":"3",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Resist Nature's Lure",
+					"Wild Shape"
+				]
+			},
+			{
+				"level":5,
+				"bab":"3",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+				]
+			},
+			{
+				"level":6,
+				"bab":"4",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":7,
+				"bab":"5",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+				]
+			},
+			{
+				"level":8,
+				"bab":"6/1",
+				"fort":6,
+				"ref":2,
+				"will":6,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":9,
+				"bab":"6/1",
+				"fort":6,
+				"ref":3,
+				"will":6,
+				"special":[
+					"Venom Immunity"
+				]
+			},
+			{
+				"level":10,
+				"bab":"7/2",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":11,
+				"bab":"8/3",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+				]
+			},
+			{
+				"level":12,
+				"bab":"9/4",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":13,
+				"bab":"9/4",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+					"A Thousand Faces"
+				]
+			},
+			{
+				"level":14,
+				"bab":"10/5",
+				"fort":9,
+				"ref":4,
+				"will":9,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":15,
+				"bab":"11/6/1",
+				"fort":9,
+				"ref":5,
+				"will":9,
+				"special":[
+					"Timeless Body"
+				]
+			},
+			{
+				"level":16,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":17,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+				]
+			},
+			{
+				"level":18,
+				"bab":"13/8/3",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+					"Wild Shape"
+				]
+			},
+			{
+				"level":19,
+				"bab":"14/9/4",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+				]
+			},
+			{
+				"level":20,
+				"bab":"15/10/5",
+				"fort":12,
+				"ref":6,
+				"will":12,
+				"special":[
+					"Wild Shape"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Druids are prof icient with the following weapons: club, dagger, dart, quarterstaff, scimitar, scythe, sickle, shortspear, sling, and spear. They are also prof icient with all natural attacks (claw, bite, and so forth) of any form they assume with wild shape. \n Druids are prof icient with light and medium armor but are prohibited from wearing metal armor; thus, they may wear only padded, leather, or hide armor. A druid may also wear wooden armor that has been altered by the ironwoodspell so that it functions as though it were steel. Druids are prof icient with shields (except tower shields) but must use only those crafted from wood. \n A druid who wears prohibited armor or uses a prohibited shield is unable to cast druid spells or use any of her supernatural or spell-like class abilities while doing so and for 24 hours thereafter.",
+			},
+			{
+				"title":"Spells",
+				"description":"A druid casts divine spells which are drawn from the druid spell list presented in Chapter 10. Her alignment may restrict her from casting certain spells opposed to her moral or ethical beliefs; see Chaotic, Evil, Good, and Lawful Spells. A druid must choose and prepare her spells in advance. \n To prepare or cast a spell, the druid must have a Wisdom score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a druid’s spell is 10 + the spell level + the druid’s Wisdom modif ier. \n Like other spellcasters, a druid can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table 3–7. In addition, she receives bonus spells per day if she has a high Wisdom score. \n A druid must spend 1 hour each day in a trance-like meditation on the mysteries of nature to regain her daily allotment of spells. A druid may prepare and cast any spell on the druid spell list, provided that she can cast spells of that level, but she must choose which spells to prepare during her daily meditation. \n A druid can’t cast spells of an alignment opposed to her own or her deity’s (if she has one). Spells associated with particular alignments are indicated by the chaos, evil, good, and law descriptors in their spell descriptions. \n <b>Spontaneous Casting</b>: A druid can channel stored spell energy into summoning spells that she hasn’t prepared ahead of time. She can “lose” a prepared spell in order to cast any summon nature’s ally spell of the same level or lower. ",
+			},
+			{
+				"title":"Orisons",
+				"description":"Druids can prepare a number of orisons, or 0-level spells, each day, as noted on Table 3–7 under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again."
+			},
+			{
+				"title":"Bonus Languages",
+				"description":"A druid’s bonus language options include Sylvan, the language of woodland creatures. This choice is in addition to the bonus languages available to the character because of her race. \n A druid also knows Druidic, a secret language known only to druids, which she learns upon becoming a 1st-level druid. Druidic is a free language for a druid; that is, she knows it in addition to her regular allotment of languages and it doesn’t take up a language slot. Druids are forbidden to teach this language to nondruids. \n Druidic has its own alphabet."
+			},
+			{
+				"title":"Nature Bond",
+				"description":"At 1st level, a druid forms a bond with nature. This bond can take one of two forms. The f irst is a close tie to the natural world, granting the druid one of the following cleric domains: Air, Animal, Earth, Fire, Plant, Water, or Weather. When determining the powers and bonus spells granted by this domain, the druid’s effective cleric level is equal to her druid level. A druid that selects this option also receives additional domain spell slots, just like a cleric. She must prepare the spell from her domain in this slot and this spell cannot be used to cast a spell spontaneously. \n The second option is to form a close bond with an animal companion. A druid may begin play with any of the animals listed in the Animal Companions section beginning on page 51. This animal is a loyal companion that accompanies the druid on her adventures. \n Unlike normal animals of its kind, an animal companion’s Hit Dice, abilities, skills, and feats advance as the druid advances in level. If a character receives an animal companion from more than one source, her effective druid levels stack for the purposes of determining the statistics and abilities of the companion. Most animal companions increase in size when their druid reaches 4th or 7th level, depending on the companion. If a druid releases her companion from service, she may gain a new one by performing a ceremony requiring 24 uninterrupted hours of prayer in the environment where the new companion typically lives. This ceremony can also replace an animal companion that has perished."
+			},
+			{
+				"title":"Nature Sense",
+				"description":"A druid gains a +2 bonus on Knowledge (nature) and Survival checks."
+			},
+			{
+				"title":"Wild Empathy",
+				"description":"A druid can improve the attitude of an animal. This ability functions just like a Diplomacy check made to improve the attitude of a person (see Chapter 4). The druid rolls 1d20 and adds her druid level and her Charisma modif ier to determine the wild empathy check result. The typical domestic animal has a starting attitude of indifferent, while wild animals are usually unfriendly. \n To use wild empathy, the druid and the animal must be within 30 feet of one another under normal conditions. Generally, inf luencing an animal in this way takes 1 minute but, as with inf luencing people, it might take more or less time. \n A druid can also use this ability to inf luence a magical beast with an Intelligence score of 1 or 2, but she takes a –4 penalty on the check."
+			},
+			{
+				"title":"Woodland Stride",
+				"description":"Starting at 2nd level, a druid may move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at her normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that have been magically manipulated to impede motion, however, still affect her."
+			},
+			{
+				"title":"Trackless Step",
+				"description":"Starting at 3rd level, a druid leaves no trail in natural surroundings and cannot be tracked. She may choose to leave a trail if so desired."
+			},
+			{
+				"title":"Resist Nature’s Lure ",
+				"description":"Starting at 4th level, a druid gains a +4 bonus on saving throws against the spell-like and supernatural abilities of fey. This bonus also applies to spells and effects that utilize or target plants, such as blight, entangle, spike growth, and warp wood."
+			},
+			{
+				"title":"Wild Shape",
+				"description":"At 4th level, a druid gains the ability to turn herself into any Small or Medium animal and back again once per day. Her options for new forms include all creatures with the animal type. This ability functions like the beast shape I spell, except as noted here. The effect lasts for 1 hour per druid level, or until she changes back. Changing form (to animal or back) is a standard action and doesn’t provoke an attack of opportunity. The form chosen must be that of an animal with which the druid is familiar. \n A druid loses her ability to speak while in animal form because she is limited to the sounds that a normal, untrained animal can make, but she can communicate normally with other animals of the same general grouping as her new form. (The normal sound a wild parrot makes is a squawk, so changing to this form does not permit speech.) \n A druid can use this ability an additional time per day at 6th level and every two levels thereafter, for a total of eight times at 18th level. At 20th level, a druid can use wild shape at will. As a druid gains levels, this ability allows the druid to take on the form of larger and smaller animals, elementals, and plants. Each form expends one daily use of this ability, regardless of the form taken. \n At 6th level, a druid can also use wild shape to change into a Large or Tiny animal or a Small elemental. When taking the form of an animal, a druid’s wild shape now functions as beast shape II. When taking the form of an elemental, the druid’s wild shape functions as elemental body I. \n At 8th level, a druid can also use wild shape to change into a Huge or Diminutive animal, a Medium elemental, or a Small or Medium plant creature. When taking the form of animals, a druid’s wild shape now functions as beast shape III. When taking the form of an elemental, the druid’s wild shape now functions as elemental body II. When taking the form of a plant creature, the druid’s wild shape functions as plant shape I \n At 10th level, a druid can also use wild shape to change into a Large elemental or a Large plant creature. When taking the form of an elemental, the druid’s wild shape now functions as elemental body III. When taking the form of a plant, the druid’s wild shape now functions as plant shape II. \n At 12th level, a druid can also use wild shape to change into a Huge elemental or a Huge plant creature. When taking the form of an elemental, the druid’s wild shape now functions as elemental body IV. When taking the form of a plant, the druid’s wild shape now functions as plant shape III"
+			},
+			{
+				"title":"Venom Immunity",
+				"description":"At 9th level, a druid gains immunity to all poisons."
+			},
+			{
+				"title":"A Thousand Faces",
+				"description":"At 13th level, a druid gains the ability to change her appearance at will, as if using the alter self spell, but only while in her normal form."
+			},
+			{
+				"title":"Timeless Body",
+				"description":"After attaining 15th level, a druid no longer takes ability score penalties for aging and cannot be magically aged. Any penalties she may have already incurred, however, remain in place. Bonuses still accrue, and the druid still dies of old age when her time is up."
+			}
+		],
+		"ex-class":"A druid who ceases to revere nature, changes to a prohibited alignment, or teaches the Druidic language to a nondruid loses all spells and druid abilities (including her animal companion, but not including weapon, armor, and shield prof iciencies). She cannot thereafter gain levels as a druid until she atones (see the atonement spell description)."
+
+	},
+	{
+		"title":"Fighter",
+		"enum":"Fighter",
+		"description":"Some take up arms for glory, wealth, or revenge. Others do battle to prove themselves, to protect others, or because they know nothing else. Still others learn the ways of weaponcraft to hone their bodies in battle and prove their mettle in the forge of war. Lords of the battlef ield, f ighters are a disparate lot, training with many weapons or just one, perfecting the uses of armor, learning the f ighting techniques of exotic masters, and studying the art of combat, all to shape themselves into living weapons. Far more than mere thugs, these skilled warriors reveal the true deadliness of their weapons, turning hunks of metal into arms capable of taming kingdoms, slaughtering monsters, and rousing the hearts of armies. Soldiers, knights, hunters, and artists of war, f ighters are unparalleled champions, and woe to those who dare stand against them.",
+		"role":"Fighters excel at combat—defeating their enemies, controlling the f low of battle, and surviving such sorties themselves. While their specif ic weapons and methods grant them a wide variety of tactics, few can match f ighters for sheer battle prowess.",
+		"alignment":"Any",
+		"hitdie":10,
+		"skills":[
+			"Climb",
+			"Craft",
+			"Handle Animal",
+			"Intimidate",
+			"Knowledge Dungeoneering",
+			"Knowledge Engineering",
+			"Profession",
+			"Ride",
+			"Survival",
+			"Swim"
+		],
+		"ranks":2,
+		"chart":[
+			{
+				"level":1,
+				"bab":"1",
+				"fort":2,
+				"ref":0,
+				"will":0,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":2,
+				"bab":"2",
+				"fort":3,
+				"ref":0,
+				"will":0,
+				"special":[
+					"Bonus Feat",
+					"Bravery"
+				]
+			},
+			{
+				"level":3,
+				"bab":"3",
+				"fort":3,
+				"ref":1,
+				"will":1,
+				"special":[
+					"Armor Training"
+				]
+			},
+			{
+				"level":4,
+				"bab":"4",
+				"fort":4,
+				"ref":1,
+				"will":1,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":5,
+				"bab":"5",
+				"fort":4,
+				"ref":1,
+				"will":1,
+				"special":[
+					"Weapon Training"
+				]
+			},
+			{
+				"level":6,
+				"bab":"6/1",
+				"fort":5,
+				"ref":2,
+				"will":2,
+				"special":[
+					"Bonus Feat",
+					"Bravery"
+				]
+			},
+			{
+				"level":7,
+				"bab":"7/2",
+				"fort":5,
+				"ref":2,
+				"will":2,
+				"special":[
+					"Armor Training"
+				]
+			},
+			{
+				"level":8,
+				"bab":"8/3",
+				"fort":6,
+				"ref":2,
+				"will":2,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":9,
+				"bab":"9/4",
+				"fort":6,
+				"ref":3,
+				"will":3,
+				"special":[
+					"Weapon Training"
+				]
+			},
+			{
+				"level":10,
+				"bab":"10/5",
+				"fort":7,
+				"ref":3,
+				"will":3,
+				"special":[
+					"Bonus Feat",
+					"Bravery"
+				]
+			},
+			{
+				"level":11,
+				"bab":"11/6/1",
+				"fort":7,
+				"ref":3,
+				"will":3,
+				"special":[
+					"Armor Training"
+				]
+			},
+			{
+				"level":12,
+				"bab":"12/7/2",
+				"fort":8,
+				"ref":4,
+				"will":4,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":13,
+				"bab":"13/8/3",
+				"fort":8,
+				"ref":4,
+				"will":4,
+				"special":[
+					"Weapon Training"
+				]
+			},
+			{
+				"level":14,
+				"bab":"14/9/4",
+				"fort":9,
+				"ref":4,
+				"will":4,
+				"special":[
+					"Bonus Feat",
+					"Bravery"
+				]
+			},
+			{
+				"level":15,
+				"bab":"15/10/5",
+				"fort":9,
+				"ref":5,
+				"will":5,
+				"special":[
+					"Armor Training"
+				]
+			},
+			{
+				"level":16,
+				"bab":"16/11/6/1",
+				"fort":10,
+				"ref":5,
+				"will":5,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":17,
+				"bab":"17/12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":5,
+				"special":[
+					"Weapon Training"
+				]
+			},
+			{
+				"level":18,
+				"bab":"18/13/8/3",
+				"fort":11,
+				"ref":6,
+				"will":6,
+				"special":[
+					"Bonus Feat",
+					"Bravery"
+				]
+			},
+			{
+				"level":19,
+				"bab":"19/14/9/4",
+				"fort":11,
+				"ref":6,
+				"will":6,
+				"special":[
+					"Armor Mastery"
+				]
+			},
+			{
+				"level":20,
+				"bab":"20/15/10/5",
+				"fort":12,
+				"ref":6,
+				"will":6,
+				"special":[
+					"Bonus Feat",
+					"Weapon Mastery"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"A fighter is proficient with all simple and martial weapons and with all armor (heavy, light, and medium) and shields (including tower shields).",
+			},
+			{
+				"title":"Bonus Feat",
+				"description":"At 1st level, and at every even level thereafter, a f ighter gains a bonus feat in addition to those gained from normal advancement (meaning that the f ighter gains a feat at every level). These bonus feats must be selected from those listed as combat feats, sometimes also called “f ighter bonus feats.” \n Upon reaching 4th level, and every four levels thereafter (8th, 12th, and so on), a f ighter can choose to learn a new bonus feat in place of a bonus feat he has already learned. In effect, the f ighter loses the bonus feat in exchange for the new one. The old feat cannot be one that was used as a prerequisite for another feat, prestige class, or other ability. A f ighter can only change one feat at any given level and must choose whether or not to swap the feat at the time he gains a new bonus feat for the level.",
+			},
+			{
+				"title":"Bravery",
+				"description":"Starting at 2nd level, a fighter gains a +1 bonus on Will saves against fear. This bonus increases by +1 for every four levels beyond 2nd."
+			},
+			{
+				"title":"Armor Training",
+				"description":"Starting at 3rd level, a fighter learns to be more maneuverable while wearing armor. Whenever he is wearing armor, he reduces the armor check penalty by 1 (to a minimum of 0) and increases the maximum Dexterity bonus allowed by his armor by 1. Every four levels thereafter (7th, 11th, and 15th), these bonuses increase by +1 each time, to a maximum –4 reduction of the armor check penalty and a +4 increase of the maximum Dexterity bonus allowed. \n In addition, a f ighter can also move at his normal speed while wearing medium armor. At 7th level, a f ighter can move at his normal speed while wearing heavy armor."
+			},
+			{
+				"title":"Weapon Training",
+				"description":"Starting at 5th level, a f ighter can select one group of weapons, as noted below. Whenever he attacks with a weapon from this group, he gains a +1 bonus on attack and damage rolls. \n Every four levels thereafter (9th, 13th, and 17th), a f ighter becomes further trained in another group of weapons. He gains a +1 bonus on attack and damage rolls when using a weapon from this group. In addition, the bonuses granted by previous weapon groups increase by +1 each. For example, when a f ighter reaches 9th level, he receives a +1 bonus on attack and damage rolls with one weapon group and a +2 bonus on attack and damage rolls with the weapon group selected at 5th level. Bonuses granted from overlapping groups do not stack. Take the highest bonus granted for a weapon if it resides in two or more groups. \n A f ighter also adds this bonus to any combat maneuver checks made with weapons from this group. This bonus also applies to the f ighter’s Combat Maneuver Defense when defending against disarm and sunder attempts made against weapons from this group."
+			},
+			{
+				"title":"Armor Mastery",
+				"description":"At 19th level, a f ighter gains DR 5/— whenever he is wearing armor or using a shield."
+			},
+			{
+				"title":"Weapon Mastery",
+				"description":"At 20th level, a fighter chooses one weapon, such as the longsword, greataxe, or longbow. Any attacks made with that weapon automatically conf irm all critical threats and have their damage multiplier increased by 1 (×2 becomes ×3, for example). In addition, he cannot be disarmed while wielding a weapon of this type."
 			}
 		],
 		"ex-class":""

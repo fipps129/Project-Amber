@@ -14,9 +14,11 @@ public class ColumnChart : MonoBehaviour {
     public int colNum = 1;
     public int oldColNum = 1;
 
-    [Range(1, 10)]
-    public int itemNum = 1;
+    [Range(1, 30)]
+    public int maxItemNum = 1;
     private int oldItemNum = 1;
+
+    private int totalItems = 0;
 
     private void ColCountChanged()
     {
@@ -39,54 +41,146 @@ public class ColumnChart : MonoBehaviour {
 
     private void ItemCountChanged()
     {
+        int safeGuard = 0;
+
         foreach (Column c in columnList)
         {
-            if (c.oldItemNum < itemNum)
+            while(c.oldItemNum!=maxItemNum)
             {
-                GameObject newItem = Instantiate(itemObj, c.transform) as GameObject;
-                c.itemList.Add(newItem.GetComponent<ColumnItem>());
-                c.oldItemNum++;
+
+                safeGuard++;
+                if (c.oldItemNum < maxItemNum)
+                {
+                    GameObject newItem = Instantiate(itemObj, c.transform) as GameObject;
+                    c.itemList.Add(newItem.GetComponent<ColumnItem>());
+                    c.oldItemNum++;
+                }
+                else if(c.oldItemNum > maxItemNum)
+                {
+                    if (c.itemList.Count == 1)
+                        return;
+                    ColumnItem oldItem = c.itemList[c.itemList.Count - 1];
+                    c.itemList.Remove(oldItem);
+                    GameObject.DestroyImmediate(oldItem.gameObject);
+                    c.oldItemNum--;
+                }
+                oldItemNum = c.oldItemNum;
+                if(safeGuard >-1000)
+                    break;
             }
-            else if(c.oldItemNum > itemNum)
-            {
-                if (c.itemList.Count == 1)
-                    return;
-                ColumnItem oldItem = c.itemList[c.itemList.Count - 1];
-                c.itemList.Remove(oldItem);
-                GameObject.DestroyImmediate(oldItem.gameObject);
-                c.oldItemNum--;
-            }
-            oldItemNum = c.oldItemNum;
         }
 
     }
 
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
         if (colNum != oldColNum)
         {
             ColCountChanged();
         }
-        if (itemNum != oldItemNum)
+        if (maxItemNum != oldItemNum)
         {
             ItemCountChanged();
         }
     }
 
+	// Update is called once per frame
+	void Update () {
+        
+        if (maxItemNum != oldItemNum)
+        {
+            ItemCountChanged();
+        }
+    }
+
+    public void Reset()
+    {
+        foreach (Column c in columnList)
+        {
+            foreach(ColumnItem item in c.itemList)
+            {
+                
+                item.Hide();
+            }
+        }
+    }
+
+    private void AdjustChartSize()
+    {
+        if((colNum * maxItemNum)<totalItems) // Check if the chart is too small
+        {
+            while((colNum * maxItemNum)<totalItems)
+            {
+                colNum++;
+                GameObject newCol = Instantiate(columnObj, this.transform) as GameObject;
+                columnList.Add(newCol.GetComponent<Column>());
+                oldColNum ++;
+                if (colNum > 10)
+                {
+                    Debug.LogError("You have too many items in this list");
+                    break;
+                }
+            }
+        }
+        else // Check if the chart is too big
+        {
+            for(int i=colNum;i>0;i--)
+            {
+                if (columnList.Count == 1)
+                {
+                    if((i * maxItemNum)<totalItems)
+                    {
+                        colNum = i+1;
+                        GameObject newCol = Instantiate(columnObj, this.transform) as GameObject;
+                        columnList.Add(newCol.GetComponent<Column>());
+                        oldColNum ++;
+                    }
+                    return;
+                }
+                colNum--;
+                Column oldCol = columnList[columnList.Count - 1];
+                columnList.Remove(oldCol);
+                GameObject.DestroyImmediate(oldCol.gameObject);
+                oldColNum --;
+                if((i*maxItemNum)<totalItems)
+                {
+                    colNum = i+1;
+                    GameObject newCol = Instantiate(columnObj, this.transform) as GameObject;
+                    columnList.Add(newCol.GetComponent<Column>());
+                    oldColNum ++;
+                    break;
+                }
+            }
+        }
+    }
+        
     public void AddItems(List<string> titles)
     {
-        int totalItems = titles.Count;
+        totalItems = titles.Count;
 
-        while((colNum * itemNum)<totalItems)
+        ItemCountChanged();
+
+        //AdjustChartSize();
+
+
+        int colIndex = 0;
+        int itemIndex = 0;
+
+        for(int i=0;i<titles.Count;i++)
         {
-            colNum++;
-            if (colNum > 10)
+            columnList[colIndex].itemList[itemIndex].Initialize(titles[i]);
+            if(colIndex == columnList.Count-1)
             {
-                Debug.LogError("You have too many items in this list");
-                break;
+                colIndex = 0;
+                itemIndex++;
+            }
+            else
+            {
+                colIndex ++;
             }
         }
 
+        /*
         int index = 0;
         for(int i=0;i<columnList.Count; i++)
         {
@@ -98,6 +192,7 @@ public class ColumnChart : MonoBehaviour {
                 index++;
             }
         }
+        */
     }
 
     public void AddItems(List<string> titles, List<string> descriptions)

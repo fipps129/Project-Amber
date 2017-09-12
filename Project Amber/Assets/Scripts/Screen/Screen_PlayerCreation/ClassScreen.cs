@@ -10,13 +10,14 @@ public class ClassScreen : Screen_Base {
     [SerializeField]
     private Text descriptionText;
     [SerializeField]
-    private Text skillText;
+    private ColumnChart skillChart;
     [SerializeField]
     private ColumnChart classFeatures;
 
     [SerializeField]
     private DropdownMenu classDropdown;
 
+    public Dictionary<ClassEnum, JSONObject> classObjDict = new Dictionary<ClassEnum, JSONObject>();
     public Dictionary<ClassEnum, Class> classList = new Dictionary<ClassEnum, Class>();
     private ClassEnum currentClass;
 
@@ -50,6 +51,7 @@ public class ClassScreen : Screen_Base {
             string classType = Utility.TrimString(jObj.GetField("enum").ToString());
 
             _class.classType = (ClassEnum)Enum.Parse(typeof(ClassEnum), classType, true);
+            classObjDict.Add(_class.classType, jObj);   // Saves the json object to get extra data when they select class
 
             _class.description = Utility.TrimString(jObj.GetField("description").ToString());
             _class.role = Utility.TrimString(jObj.GetField("role").ToString());
@@ -99,10 +101,6 @@ public class ClassScreen : Screen_Base {
         SetSkillText();
         SetClassFeatures();
 
-        //raceChart.SetScores(raceList[currentRace].abilities);
-        // SetTraitText(raceList[currentRace].racialTraits);
-        // SetDescriptionText();
-        // racePortrait.sprite = raceList[currentRace].portrait;
     }
 
     public void DropdownValueChanged()
@@ -113,7 +111,6 @@ public class ClassScreen : Screen_Base {
         SetSkillText();
         SetDescriptionText();
         SetClassFeatures();
-        //racePortrait.sprite = raceList[currentRace].portrait;
     }
 
     private void SetDescriptionText()
@@ -125,15 +122,18 @@ public class ClassScreen : Screen_Base {
 
     private void SetSkillText()
     {
-        skillText.text = "";
-        for (int i=0;i< classList[currentClass].skills.Count;i++)
+        skillChart.Reset();
+        List<string> skillStrings = new List<string>();
+        foreach(Skill skill in classList[currentClass].skills)
         {
-            skillText.text += classList[currentClass].skills[i].Name + " (" + classList[currentClass].skills[i].ability + ")\n";
+            skillStrings.Add((skill.Name + " ("+ Utility.AbilityShort(skill.ability) + ")"));
         }
+        skillChart.AddItems(skillStrings);
     }
 
     private void SetClassFeatures()
     {
+        classFeatures.Reset();
         classFeatures.AddItems(new List<string>(classList[currentClass].featureDict.Keys));
         foreach (string feature in classList[currentClass].featureDict.Keys)
         {

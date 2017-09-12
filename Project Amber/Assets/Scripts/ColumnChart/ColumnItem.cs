@@ -25,6 +25,17 @@ public class ColumnItem : MonoBehaviour {
         c_group.interactable = true;
     }
 
+    public void Hide()
+    {
+        title = "";
+        description = "";
+
+        titleText.text = "";
+
+        c_group.alpha = 0;
+        c_group.interactable = false;
+    }
+
     void Awake()
     {
         if(titleText.text == "")
