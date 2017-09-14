@@ -555,9 +555,7 @@
 			},
 			{
 				"title":"Bardic Performance",
-				"description":"A bard is trained to use the Perform skill to create magical effects on those around him, including himself if desired. He can use this ability for a number of rounds per day equal to 4 + his Charisma modifier. At each level after 1st a bard can use bardic performance for 2 additional rounds per day. Each round, the bard can produce any one of the types of bardic performance that he has mastered, as indicated by his level. 
-				Starting a bardic performance is a standard action, but it can be maintained each round as a free action. Changing a bardic performance from one effect to another requires the bard to stop the previous performance and start a new one as a standard action. A bardic performance cannot be disrupted, but it ends immediately if the bard is killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. A bard cannot have more than one bardic performance in effect at one time.
-				At 7th level, a bard can start a bardic performance as a move action instead of a standard action. At 13th level, a bard can start a bardic performance as a swift action. Each bardic performance has audible components, visual components, or both.If a bardic performance has audible components, the targets must be able to hear the bard for the performance to have any effect, and many such performances are language dependent (as noted in the description). A deaf bard has a 20% chance to fail when attempting to use a bardic performance with an audible component. If he fails this check, the attempt still counts against his daily limit. Deaf creatures are immune to bardic performances with audible components.If a bardic performance has a visual component, the targets must have line of sight to the bard for the performance to have any effect. A blind bard has a 50% chance to fail when attempting to use a bardic performance with a visual component. If he fails this check, the attempt still counts against his daily limit. Blind creatures are immune to bardic performances with visual components."
+				"description":"A bard is trained to use the Perform skill to create magical effects on those around him, including himself if desired. He can use this ability for a number of rounds per day equal to 4 + his Charisma modifier. At each level after 1st a bard can use bardic performance for 2 additional rounds per day. Each round, the bard can produce any one of the types of bardic performance that he has mastered, as indicated by his level. \n Starting a bardic performance is a standard action, but it can be maintained each round as a free action. Changing a bardic performance from one effect to another requires the bard to stop the previous performance and start a new one as a standard action. A bardic performance cannot be disrupted, but it ends immediately if the bard is killed, paralyzed, stunned, knocked unconscious, or otherwise prevented from taking a free action to maintain it each round. A bard cannot have more than one bardic performance in effect at one time. \n At 7th level, a bard can start a bardic performance as a move action instead of a standard action. At 13th level, a bard can start a bardic performance as a swift action. Each bardic performance has audible components, visual components, or both.If a bardic performance has audible components, the targets must be able to hear the bard for the performance to have any effect, and many such performances are language dependent (as noted in the description). A deaf bard has a 20% chance to fail when attempting to use a bardic performance with an audible component. If he fails this check, the attempt still counts against his daily limit. Deaf creatures are immune to bardic performances with audible components.If a bardic performance has a visual component, the targets must have line of sight to the bard for the performance to have any effect. A blind bard has a 50% chance to fail when attempting to use a bardic performance with a visual component. If he fails this check, the attempt still counts against his daily limit. Blind creatures are immune to bardic performances with visual components."
 			},
 			{
 				"title":"Cantrips",
@@ -565,8 +563,7 @@
 			},
 			{
 				"title":"Versatile Performance",
-				"description":"At 2nd level, a bard can choose one type of Perform skill. He can use his bonus in that skill in place of his bonus in associated skills. When substituting in this way, the bard uses his total Perform skill bonus, including class skill bonus, in place of its associated skill’s bonus, whether or not he has ranks in that skill or if it is a class skill. At 6th level, and every 4 levels thereafter, the bard can select an additional type of Perform to substitute. \n
-				The types of Perform and their associated skills are: Act (Bluff, Disguise), Comedy (Bluff, Intimidate), Dance (Acrobatics, Fly), Keyboard Instruments (Diplomacy, Intimidate), Oratory (Diplomacy, Sense Motive), Percussion (Handle Animal, Intimidate), Sing (Bluff, Sense Motive), String (Bluff, Diplomacy), and Wind (Diplomacy, Handle Animal)."
+				"description":"At 2nd level, a bard can choose one type of Perform skill. He can use his bonus in that skill in place of his bonus in associated skills. When substituting in this way, the bard uses his total Perform skill bonus, including class skill bonus, in place of its associated skill’s bonus, whether or not he has ranks in that skill or if it is a class skill. At 6th level, and every 4 levels thereafter, the bard can select an additional type of Perform to substitute. \n The types of Perform and their associated skills are: Act (Bluff, Disguise), Comedy (Bluff, Intimidate), Dance (Acrobatics, Fly), Keyboard Instruments (Diplomacy, Intimidate), Oratory (Diplomacy, Sense Motive), Percussion (Handle Animal, Intimidate), Sing (Bluff, Sense Motive), String (Bluff, Diplomacy), and Wind (Diplomacy, Handle Animal)."
 			},
 			{
 				"title":"Well-Versed",
@@ -1383,6 +1380,1768 @@
 			{
 				"title":"Weapon Mastery",
 				"description":"At 20th level, a fighter chooses one weapon, such as the longsword, greataxe, or longbow. Any attacks made with that weapon automatically conf irm all critical threats and have their damage multiplier increased by 1 (×2 becomes ×3, for example). In addition, he cannot be disarmed while wielding a weapon of this type."
+			}
+		],
+		"ex-class":""
+
+	},
+	{
+		"title":"Monk",
+		"enum":"Monk",
+		"description":"For the truly exemplary, martial skill transcends the battlef ield—it is a lifestyle, a doctrine, a state of mind. These warrior-artists search out methods of battle beyond swords and shields, f inding weapons within themselves just as capable of crippling or killing as any blade. These monks (so called since they adhere to ancient philosophies and strict martial disciplines) elevate their bodies to become weapons of war, from battle-minded ascetics to self-taught brawlers. Monks tread the path of discipline, and those with the will to endure that path discover within themselves not what they are, but what they are meant to be.",
+		"role":"Monks excel at overcoming even the most daunting perils, striking where it’s least expected, and taking advantage of enemy vulnerabilities. Fleet of foot and skilled in combat, monks can navigate any battlef ield with ease, aiding allies wherever they are needed most.",
+		"alignment":"Lawful",
+		"hitdie":8,
+		"skills":[
+			"Acrobatics",
+			"Climb",
+			"Craft",
+			"Escape Artist",
+			"Intimidate",
+			"Knowledge History",
+			"Knowledge Religion",
+			"Perception",
+			"Perform",
+			"Profession",
+			"Ride",
+			"Sense Motive",
+			"Stealth",
+			"Swim"
+		],
+		"ranks":4,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":2,
+				"ref":2,
+				"will":2,
+				"special":[
+					"Bonus Feat",
+					"Flurry of Blows",
+					"Stunning Fist",
+					"Unarmed Strike"
+				]
+			},
+			{
+				"level":2,
+				"bab":"1",
+				"fort":3,
+				"ref":3,
+				"will":3,
+				"special":[
+					"Bonus Feat",
+					"Evasion"
+				]
+			},
+			{
+				"level":3,
+				"bab":"2",
+				"fort":3,
+				"ref":3,
+				"will":3,
+				"special":[
+					"Fast Movement",
+					"Maneuver Training",
+					"Still Mind"
+				]
+			},
+			{
+				"level":4,
+				"bab":"3",
+				"fort":4,
+				"ref":4,
+				"will":4,
+				"special":[
+					"Ki Pool",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":5,
+				"bab":"3",
+				"fort":4,
+				"ref":4,
+				"will":4,
+				"special":[
+					"High Jump",
+					"Purity of Body"
+				]
+			},
+			{
+				"level":6,
+				"bab":"4",
+				"fort":5,
+				"ref":5,
+				"will":5,
+				"special":[
+					"Bonus Feat",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":7,
+				"bab":"5",
+				"fort":5,
+				"ref":5,
+				"will":5,
+				"special":[
+					"Ki Pool",
+					"Wholeness of Body"
+				]
+			},
+			{
+				"level":8,
+				"bab":"6/1",
+				"fort":6,
+				"ref":6,
+				"will":6,
+				"special":[
+					"Slow Fall"
+				]
+			},
+			{
+				"level":9,
+				"bab":"6/1",
+				"fort":6,
+				"ref":6,
+				"will":6,
+				"special":[
+					"Improved Evasion"
+				]
+			},
+			{
+				"level":10,
+				"bab":"7/2",
+				"fort":7,
+				"ref":7,
+				"will":7,
+				"special":[
+					"Bonus Feat",
+					"Ki Pool",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":11,
+				"bab":"8/3",
+				"fort":7,
+				"ref":7,
+				"will":7,
+				"special":[
+					"Diamond Body"
+				]
+			},
+			{
+				"level":12,
+				"bab":"9/4",
+				"fort":8,
+				"ref":8,
+				"will":8,
+				"special":[
+					"Abundant Step",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":13,
+				"bab":"9/4",
+				"fort":8,
+				"ref":8,
+				"will":8,
+				"special":[
+					"Diamond Soul"
+				]
+			},
+			{
+				"level":14,
+				"bab":"10/5",
+				"fort":9,
+				"ref":9,
+				"will":9,
+				"special":[
+					"Bonus Feat",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":15,
+				"bab":"11/6/1",
+				"fort":9,
+				"ref":9,
+				"will":9,
+				"special":[
+					"Quivering Palm"
+				]
+			},
+			{
+				"level":16,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":10,
+				"will":10,
+				"special":[
+					"Ki Pool",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":17,
+				"bab":"12/7/2",
+				"fort":10,
+				"ref":10,
+				"will":10,
+				"special":[
+					"Timeless Body",
+					"Tongue of the Sun and Moon"
+				]
+			},
+			{
+				"level":18,
+				"bab":"13/8/3",
+				"fort":11,
+				"ref":11,
+				"will":11,
+				"special":[
+					"Bonus Feat",
+					"Slow Fall"
+				]
+			},
+			{
+				"level":19,
+				"bab":"14/9/4",
+				"fort":11,
+				"ref":11,
+				"will":11,
+				"special":[
+					"Empty Body"
+				]
+			},
+			{
+				"level":20,
+				"bab":"15/10/5",
+				"fort":12,
+				"ref":12,
+				"will":12,
+				"special":[
+					"Perfect Self",
+					"Slow Fall"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Monks are prof icient with the club, crossbow (light or heavy), dagger, handaxe, javelin, kama, nunchaku, quarterstaff, sai, shortspear, short sword, shuriken, siangham, sling, and spear.Monks are not prof icient with any armor or shields.When wearing armor, using a shield, or carrying a medium or heavy load, a monk loses his AC bonus, as well as his fast movement and f lurry of blows abilities.",
+			},
+			{
+				"title":"AC Bonus",
+				"description":"When unarmored and unencumbered, the monk adds his Wisdom bonus (if any) to his AC and his CMD. In addition, a monk gains a +1 bonus to AC and CMD at 4th level. This bonus increases by 1 for every four monk levels thereafter, up to a maximum of +5 at 20th level. \n These bonuses to AC apply even against touch attacks or when the monk is f lat-footed. He loses these bonuses when he is immobilized or helpless, when he wears any armor, when he carries a shield, or when he carries a medium or heavy load.",
+			},
+			{
+				"title":"Flurry of Blows",
+				"description":"Starting at 1st level, a monk can make a f lurry of blows as a full-attack action. When doing so, he may make one additional attack, taking a –2 penalty on all of his attack rolls, as if using the Two-Weapon Fighting feat. These attacks can be any combination of unarmed strikes and attacks with a monk special weapon (he does not need to use two weapons to utilize this ability). For the purpose of these attacks, the monk’s base attack bonus from his monk class levels is equal to his monk level. For all other purposes, such as qualifying for a feat or a prestige class, the monk uses his normal base attack bonus. At 8th level, the monk can make two additional attacks when he uses f lurry of blows, as if using Improved Two-Weapon Fighting (even if the monk does not meet the prerequisites for the feat). At 15th level, the monk can make three additional attacks using f lurry of blows, as if using Greater Two-Weapon Fighting (even if the monk does not meet the prerequisites for the feat). A monk applies his full Strength bonus to his damage rolls for all successful attacks made with f lurry of blows, whether the attacks are made with an off-hand or with a weapon wielded in both hands. A monk may substitute disarm, sunder, and trip combat maneuvers for unarmed attacks as part of a f lurry of blows. A monk cannot use any weapon other than an unarmed strike or a special monk weapon as part of a f lurry of blows. A monk with natural weapons cannot use such weapons as part of a f lurry of blows, nor can he make natural attacks in addition to his f lurry of blows attacks."
+			},
+			{
+				"title":"Unarmed Strike",
+				"description":"At 1st level, a monk gains Improved Unarmed Strike as a bonus feat. A monk’s attacks may be with f ist, elbows, knees, and feet. This means that a monk may make unarmed strikes with his hands full. There is no such thing as an off-hand attack for a monk striking unarmed. A monk may thus apply his full Strength bonus on damage rolls for all his unarmed strikes. \n Usually a monk’s unarmed strikes deal lethal damage, but he can choose to deal nonlethal damage instead with no penalty on his attack roll. He has the same choice to deal lethal or nonlethal damage while grappling. \n A monk’s unarmed strike is treated as both a manufactured weapon and a natural weapon for the purpose of spells and effects that enhance or improve either manufactured weapons or natural weapons."
+			},
+			{
+				"title":"Bonus Feat",
+				"description":"At 1st level, 2nd level, and every 4 levels thereafter, a monk may select a bonus feat. These feats must be taken from the following list: Catch Off-Guard, Combat Ref lexes, Def lect Arrows, Dodge, Improved Grapple, Scorpion Style, and Throw Anything. At 6th level, the following feats are added to the list: Gorgon’s Fist, Improved Bull Rush, Improved Disarm, Improved Feint, Improved Trip, and Mobility. At 10th level, the following feats are added to the list: Improved Critical, Medusa’s Wrath, Snatch Arrows, and Spring Attack. A monk need not have any of the prerequisites normally required for these feats to select them."
+			},
+			{
+				"title":"Stunning Fist",
+				"description":"At 1st level, the monk gains Stunning Fist as a bonus feat, even if he does not meet the prerequisites. At 4th level, and every 4 levels thereafter, the monk gains the ability to apply a new condition to the target of his Stunning Fist. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. At 4th level, he can choose to make the target fatigued. At 8th level, he can make the target sickened for 1 minute. At 12th level, he can make the target staggered for 1d6+1 rounds. At 16th level, he can permanently blind or deafen the target. At 20th level, he can paralyze the target for 1d6+1 rounds. The monk must choose which condition will apply before the attack roll is made. These effects do not stack with themselves (a creature sickened by Stunning Fist cannot become nauseated if hit by Stunning Fist again), but additional hits do increase the duration."
+			},
+			{
+				"title":"Evasion",
+				"description":"At 2nd level or higher, a monk can avoid even magical and unusual attacks with great agility. If a monk makes a successful Ref lex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if a monk is wearing light armor or no armor. A helpless monk does not gain the benef it of evasion."
+			},
+			{
+				"title":"Fast Movement",
+				"description":"At 3rd level, a monk gains an enhancement bonus to his base speed. A monk in armor or carrying a medium or heavy load loses this extra speed."
+			},
+			{
+				"title":"Maneuver Training",
+				"description":"At 3rd level, a monk uses his monk level in place of his base attack bonus when calculating his Combat Maneuver Bonus. Base attack bonuses granted from other classes are unaffected and are added normally."
+			},
+			{
+				"title":"Still Mind",
+				"description":"A monk of 3rd level or higher gains a +2 bonus on saving throws against enchantment spells and effects."
+			},
+			{
+				"title":"Ki Pool",
+				"description":"At 4th level, a monk gains a pool of kipoints, supernatural energy he can use to accomplish amazing feats. The number of points in a monk’s ki pool is equal to 1/2 his monk level + his Wisdom modif ier. As long as he has at least 1 point in his ki pool, he can make a ki strike. At 4th level, ki strike allows his unarmed attacks to be treated as magic weapons for the purpose of overcoming damage reduction. At 7th level, his unarmed attacks are also treated as cold iron and silver for the purpose of overcoming damage reduction. \n At 10th level, his unarmed attacks are also treated as lawful weapons for the purpose of overcoming damage reduction. At 16th level, his unarmed attacks are treated as adamantine weapons for the purpose of overcoming damage reduction and bypassing hardness. \n By spending 1 point from his ki pool, a monk can make one additional attack at his highest attack bonus when making a f lurry of blows attack. In addition, he can spend 1 point to increase his base speed by 20 feet for 1 round. Finally, a monk can spend 1 point from his ki pool to give himself a +4 dodge bonus to AC for 1 round. Each of these powers is activated as a swift action. A monk gains additional powers that consume points from his ki pool as he gains levels. \n The ki pool is replenished each morning after 8 hours of rest or meditation; these hours do not need to be consecutive."
+			},
+			{
+				"title":"Slow Fall",
+				"description":"At 4th level or higher, a monk within arm’s reach of a wall can use it to slow his descent. When f irst gaining this ability, he takes damage as if the fall were 20 feet shorter than it actually is. The monk’s ability to slow his fall (that is, to reduce the effective distance of the fall when next to a wall) improves with his monk level until at 20th level he can use a nearby wall to slow his descent and fall any distance without harm."
+			},
+			{
+				"title":"High Jump",
+				"description":"At 5th level, a monk adds his level to all Acrobatics checks made to jump, both for vertical jumps and horizontal jumps. In addition, he always counts as having a running start when making jump checks using Acrobatics. By spending 1 point from his ki pool as a swift action, a monk gains a +20 bonus on Acrobatics checks made to jump for 1 round."
+			},
+			{
+				"title":"Purity of Body",
+				"description":"At 5th level, a monk gains immunity to all diseases, including supernatural and magical diseases."
+			},
+			{
+				"title":"Wholeness of Body",
+				"description":"At 7th level or higher, a monk can heal his own wounds as a standard action. He can heal a number of hit points of damage equal to his monk level by using 2 points from his ki pool."
+			},
+			{
+				"title":"Improved Evasion",
+				"description":"At 9th level, a monk’s evasion ability improves. He still takes no damage on a successful Ref lex saving throw against attacks, but henceforth he takes only half damage on a failed save. A helpless monk does not gain the benefit of improved evasion."
+			},
+			{
+				"title":"Diamond Body",
+				"description":"At 11th level, a monk gains immunity to poisons of all kinds."
+			},
+			{
+				"title":"Abundant Step",
+				"description":"At 12th level or higher, a monk can slip magically between spaces, as if using the spell dimension door. Using this ability is a move action that consumes 2 points from his ki pool. His caster level for this effect is equal to his monk level. He cannot take other creatures with him when he uses this ability."
+			},
+			{
+				"title":"Diamond Soul",
+				"description":"At 13th level, a monk gains spell resistance equal to his current monk level + 10. In order to affect the monk with a spell, a spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the monk’s spell resistance."
+			},
+			{
+				"title":"Quivering Palm",
+				"description":"Starting at 15th level, a monk can set up vibrations within the body of another creature that can thereafter be fatal if the monk so desires. He can use this quivering palm attack once per day, and he must announce his intent before making his attack roll. Creatures immune to critical hits cannot be affected. Otherwise, if the monk strikes successfully and the target takes damage from the blow, the quivering palm attack succeeds. Thereafter, the monk can try to slay the victim at any later time, as long as the attempt is made within a number of days equal to his monk level. To make such an attempt, the monk merely wills the target to die (a free action), and unless the target makes a Fortitude saving throw (DC 10 + 1/2 the monk’s level + the monk’s Wis modif ier), it dies. If the saving throw is successful, the target is no longer in danger from that particular quivering palm attack, but it may still be affected by another one at a later time. A monk can have no more than 1 quivering palm in effect at one time. If a monk uses quivering palm while another is still in effect, the previous effect is negated."
+			},
+			{
+				"title":"Timeless Body",
+				"description":"At 17th level, a monk no longer takes penalties to his ability scores for aging and cannot be magically aged. Any such penalties that he has already taken, however, remain in place. Age bonuses still accrue, and the monk still dies of old age when his time is up."
+			},
+			{
+				"title":"Tongue of the Sun and Moon",
+				"description":"A monk of 17th level or higher can speak with any living creature."
+			},
+			{
+				"title":"Empty Body",
+				"description":"At 19th level, a monk gains the ability to assume an ethereal state for 1 minute as though using the spell etherealness. Using this ability is a move action that consumes 3 points from his ki pool. This ability only affects the monk and cannot be used to make other creatures ethereal."
+			},
+			{
+				"title":"Perfect Self",
+				"description":"At 20th level, a monk becomes a magical creature. He is forevermore treated as an outsider rather than as a humanoid (or whatever the monk’s creature type was) for the purpose of spells and magical effects. Additionally, the monk gains damage reduction 10/chaotic, which allows him to ignore the f irst 10 points of damage from any attack made by a nonchaotic weapon or by any natural attack made by a creature that doesn’t have similar damage reduction. Unlike other outsiders, the monk can still be brought back from the dead as if he were a member of his previous creature type."
+			}
+		],
+		"ex-class":"A monk who becomes nonlawful cannot gain new levels as a monk but retains all monk abilities."
+	},
+	{
+		"title":"Paladin",
+		"enum":"Paladin",
+		"description":"Through a select, worthy few shines the power of the divine. Called paladins, these noble souls dedicate their swords and lives to the battle against evil. Knights, crusaders, and law-bringers, paladins seek not just to spread divine justice but to embody the teachings of the virtuous deities they serve. In pursuit of their lofty goals, they adhere to ironclad laws of morality and discipline. As reward for their righteousness, these holy champions are blessed with boons to aid them in their quests: powers to banish evil, heal the innocent, and inspire the faithful. Although their convictions might lead them into conf lict with the very souls they would save, paladins weather endless challenges of faith and dark temptations, risking their lives to do right and f ighting to bring about a brighter future.",
+		"role":"Paladins serve as beacons for their allies within the chaos of battle. While deadly opponents of evil, they can also empower goodly souls to aid in their crusades. Their magic and martial skills also make them well suited to defending others and blessing the fallen with the strength to continue f ighting.",
+		"alignment":"Lawful_Good",
+		"hitdie":10,
+		"skills":[
+			"Craft",
+			"Diplomacy",
+			"Handle Animal",
+			"Heal",
+			"Knowledge Nobility",
+			"Knowledge Religion",
+			"Profession",
+			"Ride",
+			"Sense Motive",
+			"Spellcraft"
+		],
+		"ranks":2,
+		"chart":[
+			{
+				"level":1,
+				"bab":"1",
+				"fort":2,
+				"ref":0,
+				"will":2,
+				"special":[
+					"Aura of Good",
+					"Detect Evil",
+					"Smite Evil"
+				]
+			},
+			{
+				"level":2,
+				"bab":"2",
+				"fort":3,
+				"ref":0,
+				"will":3,
+				"special":[
+					"Divine Grace",
+					"Lay on hands"
+				]
+			},
+			{
+				"level":3,
+				"bab":"3",
+				"fort":3,
+				"ref":1,
+				"will":3,
+				"special":[
+					"Aura of Courage",
+					"Divine Health",
+					"Mercy"
+				]
+			},
+			{
+				"level":4,
+				"bab":"4",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Channel Positive Energy",
+					"Smite Evil"
+				]
+			},
+			{
+				"level":5,
+				"bab":"5",
+				"fort":4,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Divine Bond"
+				]
+			},
+			{
+				"level":6,
+				"bab":"6/1",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":7,
+				"bab":"7/2",
+				"fort":5,
+				"ref":2,
+				"will":5,
+				"special":[
+					"Smite Evil"
+				]
+			},
+			{
+				"level":8,
+				"bab":"8/3",
+				"fort":6,
+				"ref":2,
+				"will":6,
+				"special":[
+					"Aura of Resolve"
+				]
+			},
+			{
+				"level":9,
+				"bab":"9/4",
+				"fort":6,
+				"ref":3,
+				"will":6,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":10,
+				"bab":"10/5",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Smite Evil"
+				]
+			},
+			{
+				"level":11,
+				"bab":"11/6/1",
+				"fort":7,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Aura of Justice"
+				]
+			},
+			{
+				"level":12,
+				"bab":"12/7/2",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":13,
+				"bab":"13/8/3",
+				"fort":8,
+				"ref":4,
+				"will":8,
+				"special":[
+					"Smite Evil"
+				]
+			},
+			{
+				"level":14,
+				"bab":"14/9/4",
+				"fort":9,
+				"ref":4,
+				"will":9,
+				"special":[
+					"Aura of Faith"
+				]
+			},
+			{
+				"level":15,
+				"bab":"15/10/5",
+				"fort":9,
+				"ref":5,
+				"will":9,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":16,
+				"bab":"16/11/6/1",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":17,
+				"bab":"17/12/7/2",
+				"fort":10,
+				"ref":5,
+				"will":10,
+				"special":[
+					"Aura of Righteousness"
+				]
+			},
+			{
+				"level":18,
+				"bab":"18/13/8/3",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+					"Mercy"
+				]
+			},
+			{
+				"level":19,
+				"bab":"19/14/9/4",
+				"fort":11,
+				"ref":6,
+				"will":11,
+				"special":[
+					"Smite Evil"
+				]
+			},
+			{
+				"level":20,
+				"bab":"20/15/10/5",
+				"fort":12,
+				"ref":6,
+				"will":12,
+				"special":[
+					"Holy Champion"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Paladins are prof icient with all simple and martial weapons, with all types of armor (heavy, medium, and light), and with shields (except tower shields).",
+			},
+			{
+				"title":"Aura of Good",
+				"description":"The power of a paladin’s aura of good (see the detect good spell) is equal to her paladin level.",
+			},
+			{
+				"title":"Detect Evil",
+				"description":"At will, a paladin can use detect evil, as the spell. A paladin can, as a move action, concentrate on a single item or individual within 60 feet and determine if it is evil, learning the strength of its aura as if having studied it for 3 rounds. While focusing on one individual or object, the paladin does not detect evil in any other object or individual within range."
+			},
+			{
+				"title":"Smite Evil",
+				"description":"Once per day, a paladin can call out to the powers of good to aid her in her struggle against evil. As a swift action, the paladin chooses one target within sight to smite. If this target is evil, the paladin adds her Charisma bonus (if any) to her attack rolls and adds her paladin level to all damage rolls made against the target of her smite. If the target of smite evil is an outsider with he evil subtype, an evil-aligned dragon, or an undead creature, the bonus to damage on the f irst successful attack increases to 2 points of damage per level the paladin possesses. Regardless of the target, smite evil attacks automatically bypass any DR the creature might possess. \n In addition, while smite evil is in effect, the paladin gains a def lection bonus equal to her Charisma modif ier (if any) to her AC against attacks made by the target of the smite. If the paladin targets a creature that is not evil, the smite is wasted with no effect. \n The smite evil effect remains until the target of the smite is dead or the next time the paladin rests and regains her uses of this ability. At 4th level, and at every three levels thereafter, the paladin may smite evil one additional time per day, as indicated on Table 3–11, to a maximum of seven times per day at 19th level."
+			},
+			{
+				"title":"Divine Grace",
+				"description":"At 2nd level, a paladin gains a bonus equal to her Charisma bonus (if any) on all saving throws."
+			},
+			{
+				"title":"Lay on Hands",
+				"description":"Beginning at 2nd level, a paladin can heal wounds (her own or those of others) by touch. Each day she can use this ability a number of times equal to 1/2 her paladin level plus her Charisma modif ier. With one use of this ability, a paladin can heal 1d6 hit points of damage for every two paladin levels she possesses. Using this ability is a standard action, unless the paladin targets herself, in which case it is a swift action. Despite the name of this ability, a paladin only needs one free hand to use this ability. \n Alternatively, a paladin can use this healing power to deal damage to undead creatures, dealing 1d6 points of damage for every two levels the paladin possesses. Using lay on hands in this way requires a successful melee touch attack and doesn’t provoke an attack of opportunity. Undead do not receive a saving throw against this damage."
+			},
+			{
+				"title":"Aura of Courage",
+				"description":"At 3rd level, a paladin is immune to fear (magical or otherwise). Each ally within 10 feet of her gains a +4 morale bonus on saving throws against fear effects. This ability functions only while the paladin is conscious, not if she is unconscious or dead."
+			},
+			{
+				"title":"Divine Health",
+				"description":"At 3rd level, a paladin is immune to all diseases, including supernatural and magical diseases, including mummy rot."
+			},
+			{
+				"title":"Mercy",
+				"description":"At 3rd level, and every three levels thereafter, a paladin can select one mercy. Each mercy adds an effect to the paladin’s lay on hands ability. Whenever the paladin uses lay on hands to heal damage to one target, the target also receives the additional effects from all of the mercies possessed by the paladin. A mercy can remove a condition caused by a curse, disease, or poison without curing the aff liction. Such conditions return after 1 hour unless the mercy actually removes the aff liction that causes the condition."
+			},
+			{
+				"title":"Channel Positive Energy",
+				"description":"When a paladin reaches 4th level, she gains the supernatural ability to channel positive energy like a cleric. Using this ability consumes two uses of her lay on hands ability. A paladin uses her level as her effective cleric level when channeling positive energy. This is a Charisma-based ability."
+			},
+			{
+				"title":"Spells",
+				"description":"Beginning at 4th level, a paladin gains the ability to cast a small number of divine spells which are drawn from the paladin spell list presented in Chapter 10. A paladin must choose and prepare her spells in advance. \n To prepare or cast a spell, a paladin must have a Charisma score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a paladin’s spell is 10 + the spell level + the paladin’s Charisma modif ier. \n Like other spellcasters, a paladin can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table 3–11. In addition, she receives bonus spells per day if she has a high Charisma score (see Table 1–3). When Table 3–11 indicates that the paladin gets 0 spells per day of a given spell level, she gains only the bonus spells she would be entitled to based on her Charisma score for that spell level. \n A paladin must spend 1 hour each day in quiet prayer and meditation to regain her daily allotment of spells. A paladin may prepare and cast any spell on the paladin spell list, provided that she can cast spells of that level, but she must choose which spells to prepare during her daily meditation. Through 3rd level, a paladin has no caster level. At 4th level and higher, her caster level is equal to her paladin level – 3."
+			},
+			{
+				"title":"Divine Bond",
+				"description":"Upon reaching 5th level, a paladin forms a divine bond with her god. This bond can take one of two forms. Once the form is chosen, it cannot be changed. \n The f irst type of bond allows the paladin to enhance her weapon as a standard action by calling upon the aid of a celestial spirit for 1 minute per paladin level. When called, the spirit causes a held weapon to shed light as a torch. At 5th level, this spirit grants the weapon a +1 enhancement bonus. For every three levels beyond 5th, the weapon gains another +1 enhancement bonus, to a maximum of +6 at 20th level. These bonuses can be added to the weapon, stacking with existing weapon bonuses to a maximum of +5, or they can be used to add any of the following weapon properties: axiomatic, brilliant energy, defending, disruption, f laming, f laming burst, holy, keen, merciful, and speed. Adding these properties consumes an amount of bonus equal to the property’s cost (see Table 15– 9). These bonuses are added to any properties the weapon already has, but duplicate abilities do not stack. If the weapon is not magical, at least a +1 enhancement bonus must be added before any other properties can be added. The bonus and properties granted by the spirit are determined when the spirit is called and cannot be changed until the spirit is called again. The celestial spirit imparts no bonuses if the weapon is held by anyone other than the paladin but resumes giving bonuses if returned to the paladin. These bonuses apply to only one end of a double weapon. A paladin can use this ability once per day at 5th level, and one additional time per day for every four levels beyond 5th, to a total of four times per day at 17th level. \n If a weapon bonded with a celestial spirit is destroyed, the paladin loses the use of this ability for 30 days, or until she gains a level, whichever comes f irst. During this 30-day period, the paladin takes a –1 penalty on attack and weapon damage rolls. \n The second type of bond allows a paladin to gain the service of an unusually intelligent, strong, and loyal steed to serve her in her crusade against evil. This mount is usually a horse (for a Medium paladin) or a pony (for a Small paladin), although more exotic mounts, such as a boar, camel, or dog are also suitable. This mount functions as a druid’s animal companion, using the paladin’s level as her effective druid level. Bonded mounts have an Intelligence of at least 6.  \n Once per day, as a full-round action, a paladin may magically call her mount to her side. This ability is the equivalent of a spell of a level equal to one-third the paladin’s level. The mount immediately appears adjacent to the paladin. A paladin can use this ability once per day at 5th level, and one additional time per day for every 4 levels thereafter, for a total of four times per day at 17th level. \n At 11th level, the mount gains the celestial template (see the Pathf inder RPG Bestiary) and becomes a magical beast for the purposes of determining which spells affect it. At 15th level, a paladin’s mount gains spell resistance equal to the paladin’s level + 11. \n Should the paladin’s mount die, the paladin may not summon another mount for 30 days or until she gains a paladin level, whichever comes f irst. During this 30-day period, the paladin takes a –1 penalty on attack and weapon damage rolls. "
+			},
+			{
+				"title":"Aura of Resolve",
+				"description":"At 8th level, a paladin is immune to charm spells and spell-like abilities. Each ally within 10 feet of her gains a +4 morale bonus on saving throws against charm effects. This ability functions only while the paladin is conscious, not if she is unconscious or dead."
+			},
+			{
+				"title":"Aura of Justice",
+				"description":"At 11th level, a paladin can expend two uses of her smite evil ability to grant the ability to smite evil to all allies within 10 feet, using her bonuses. Allies must use this smite evil ability by the start of the paladin’s next turn and the bonuses last for 1 minute. Using this ability is a free action. Evil creatures gain no benef it from this ability."
+			},
+			{
+				"title":"Aura of Faith",
+				"description":"At 14th level, a paladin’s weapons are treated as good-aligned for the purposes of overcoming damage reduction. Any attack made against an enemy within 10 feet of her is treated as good-aligned for the purposes of overcoming damage reduction.This ability functions only while the paladin is conscious, not if she is unconscious or dead."
+			},
+			{
+				"title":"Aura of Righteousness",
+				"description":"At 17th level, a paladin gains DR 5/evil and immunity to compulsion spells and spell-like abilities. Each ally within 10 feet of her gains a +4 morale bonus on saving throws against compulsion effects. This ability functions only while the paladin is conscious, not if she is unconscious or dead."
+			},
+			{
+				"title":"Holy Champion",
+				"description":"At 20th level, a paladin becomes a conduit for the power of her god. Her DR increases to 10/evil. Whenever she uses smite evil and successfully strikes an evil outsider, the outsider is also subject to a banishment,using her paladin level as the caster level (her weapon and holy symbol automatically count as objects that the subject hates). After the banishment effect and the damage from the attack is resolved, the smite immediately ends. In addition, whenever she channels positive energy or uses lay on hands to heal a creature, she heals the maximum possible amount."
+			},
+			{
+				"title":"Code of Conduct",
+				"description":"A paladin must be of lawful good alignment and loses all class features except prof iciencies if she ever willingly commits an evil act.Additionally, a paladin’s code requires that she respect legitimate authority, act with honor (not lying, not cheating, not using poison, and so forth), help those in need (provided they do not use the help for evil or chaotic ends), and punish those who harm or threaten innocents."
+			},
+			{
+				"title":"Associates",
+				"description":"While she may adventure with good or neutral allies, a paladin avoids working with evil characters or with anyone who consistently offends her moral code. Under exceptional circumstances, a paladin can ally with evil associates, but only to defeat what she believes to be a greater evil. A paladin should seek an atonementspell periodically during such an unusual alliance, and should end the alliance immediately should she feel it is doing more harm than good. A paladin may accept only henchmen, followers, or cohorts who are lawful good."
+			}
+		],
+		"ex-class":"A paladin who ceases to be lawful good, who willfully commits an evil act, or who violates the code of conduct loses all paladin spells and class features (including the service of the paladin’s mount, but not weapon, armor, and shield prof iciencies). She may not progress any further in levels as a paladin. She regains her abilities and advancement potential if she atones for her violations (see the atonementspell description in Chapter 10), as appropriate."
+
+	},
+	{
+		"title":"Ranger",
+		"enum":"Ranger",
+		"description":"For those who relish the thrill of the hunt, there are only predators and prey. Be they scouts, trackers, or bounty hunters, rangers share much in common: unique mastery of specialized weapons, skill at stalking even the most elusive game, and the expertise to defeat a wide range of quarries. Knowledgeable, patient, and skilled hunters, these rangers hound man, beast, and monster alike, gaining insight into the way of the predator, skill in varied environments, and ever more lethal martial prowess. While some track man-eating creatures to protect the frontier, others pursue more cunning game—even fugitives among their own people.",
+		"role":"Rangers are deft skirmishers, either in melee or at range, capable of skillfully dancing in and out of battle. Their abilities allow them to deal signif icant harm to specif ic types of foes, but their skills are valuable against all manner of enemies.",
+		"alignment":"Any",
+		"hitdie":10,
+		"skills":[
+			"Climp",
+			"Craft",
+			"Handle Animal",
+			"Heal",
+			"Intimidate",
+			"Knowledge Dungeoneering",
+			"Knowledge Geography",
+			"Knowledge Nature",
+			"Perception",
+			"Profession",
+			"Ride",
+			"Spellcraft",
+			"Stealth",
+			"Survival",
+			"Swim"
+		],
+		"ranks":6,
+		"chart":[
+			{
+				"level":1,
+				"bab":"1",
+				"fort":2,
+				"ref":2,
+				"will":0,
+				"special":[
+					"Favored Enemy",
+					"Track",
+					"Wild Empathy"
+				]
+			},
+			{
+				"level":2,
+				"bab":"2",
+				"fort":3,
+				"ref":3,
+				"will":0,
+				"special":[
+					"Combat Style Feat"
+				]
+			},
+			{
+				"level":3,
+				"bab":"3",
+				"fort":3,
+				"ref":3,
+				"will":1,
+				"special":[
+					"Endurance",
+					"Favored Terrain"
+				]
+			},
+			{
+				"level":4,
+				"bab":"4",
+				"fort":4,
+				"ref":4,
+				"will":1,
+				"special":[
+					"Hunter's Bond"
+				]
+			},
+			{
+				"level":5,
+				"bab":"5",
+				"fort":4,
+				"ref":4,
+				"will":1,
+				"special":[
+					"Favored Enemy"
+				]
+			},
+			{
+				"level":6,
+				"bab":"6/1",
+				"fort":5,
+				"ref":5,
+				"will":2,
+				"special":[
+					"Combat Style Feat"
+				]
+			},
+			{
+				"level":7,
+				"bab":"7/2",
+				"fort":5,
+				"ref":5,
+				"will":2,
+				"special":[
+					"Woodland Stride"
+				]
+			},
+			{
+				"level":8,
+				"bab":"8/3",
+				"fort":6,
+				"ref":6,
+				"will":2,
+				"special":[
+					"Swift Tracker",
+					"Favored Terrain"
+				]
+			},
+			{
+				"level":9,
+				"bab":"9/4",
+				"fort":6,
+				"ref":6,
+				"will":3,
+				"special":[
+					"Evasion"
+				]
+			},
+			{
+				"level":10,
+				"bab":"10/5",
+				"fort":7,
+				"ref":7,
+				"will":3,
+				"special":[
+					"Favored Enemy",
+					"Combat Style Feat"
+				]
+			},
+			{
+				"level":11,
+				"bab":"11/6/1",
+				"fort":7,
+				"ref":7,
+				"will":3,
+				"special":[
+					"Quarry"
+				]
+			},
+			{
+				"level":12,
+				"bab":"12/7/2",
+				"fort":8,
+				"ref":8,
+				"will":4,
+				"special":[
+					"Camouflage"
+				]
+			},
+			{
+				"level":13,
+				"bab":"13/8/3",
+				"fort":8,
+				"ref":8,
+				"will":4,
+				"special":[
+					"Favored Terrain"
+				]
+			},
+			{
+				"level":14,
+				"bab":"14/9/4",
+				"fort":9,
+				"ref":9,
+				"will":4,
+				"special":[
+					"Combat Style Feat"
+				]
+			},
+			{
+				"level":15,
+				"bab":"15/10/5",
+				"fort":9,
+				"ref":9,
+				"will":5,
+				"special":[
+					"Favored Enemy"
+				]
+			},
+			{
+				"level":16,
+				"bab":"16/11/6/1",
+				"fort":10,
+				"ref":10,
+				"will":5,
+				"special":[
+					"Improved Evasion"
+				]
+			},
+			{
+				"level":17,
+				"bab":"17/2/7/2",
+				"fort":10,
+				"ref":10,
+				"will":5,
+				"special":[
+					"Hide in Plain Sight"
+				]
+			},
+			{
+				"level":18,
+				"bab":"18/13/8/3",
+				"fort":11,
+				"ref":11,
+				"will":6,
+				"special":[
+					"Favored Terrain",
+					"Combat Style Feat"
+				]
+			},
+			{
+				"level":19,
+				"bab":"19/14/9/4",
+				"fort":11,
+				"ref":11,
+				"will":6,
+				"special":[
+					"Improved Quarry"
+				]
+			},
+			{
+				"level":20,
+				"bab":"20/15/10/5",
+				"fort":12,
+				"ref":12,
+				"will":6,
+				"special":[
+					"Favored Enemy",
+					"Master Hunter"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"A ranger is prof icient with all simple and martial weapons and with light armor, medium armor, and shields (except tower shields).",
+			},
+			{
+				"title":"Favored Enemy",
+				"description":"At 1st level, a ranger selects a creature type from the ranger favored enemies table. He gains a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of his selected type. Likewise, he gets a +2 bonus on weapon attack and damage rolls against them. A ranger may make Knowledge skill checks untrained when attempting to identify these creatures. \n At 5th level and every f ive levels thereafter (10th, 15th, and 20th level), the ranger may select an additional favored enemy. In addition, at each such interval, the bonus against any one favored enemy (including the one just selected, if so desired) increases by +2. \n If the ranger chooses humanoids or outsiders as a favored enemy, he must also choose an associated subtype, as indicated on the table below. (Note that there are other types of humanoid to choose from in the Pathf inder RPG Bestiary—those called out specif ically on the table below are merely the most common.) If a specif ic creature falls into more than one category of favored enemy, the ranger’s bonuses do not stack; he simply uses whichever bonus is higher.",
+			},
+			{
+				"title":"Track",
+				"description":"A ranger adds half his level (minimum 1) to Survival skill checks made to follow tracks."
+			},
+			{
+				"title":"Wild Empathy",
+				"description":"A ranger can improve the initial attitude of an animal. This ability functions just like a Diplomacy check to improve the attitude of a person (see Chapter 4). The ranger rolls 1d20 and adds his ranger level and his Charisma bonus to determine the wild empathy check result. The typical domestic animal has a starting attitude of indifferent, while wild animals are usually unfriendly. \n To use wild empathy, the ranger and the animal must be within 30 feet of one another under normal visibility conditions. Generally, inf luencing an animal in this way takes 1 minute, but, as with inf luencing people, it might take more or less time. \n The ranger can also use this ability to inf luence a magical beast with an Intelligence score of 1 or 2, but he takes a –4 penalty on the check."
+			},
+			{
+				"title":"Combat Style Feat",
+				"description":"At 2nd level, a ranger must select one of two combat styles to pursue: archery or two-weapon combat. The ranger’s expertise manifests in the form of bonus feats at 2nd, 6th, 10th, 14th, and 18th level. He can choose feats from his selected combat style, even if he does not have the normal prerequisites. \n If the ranger selects archery, he can choose from the following list whenever he gains a combat style feat: Far Shot, Point Blank Shot, Precise Shot, and Rapid Shot. At 6th level, he adds Improved Precise Shot and Manyshot to the list. At 10th level, he adds Pinpoint Targeting and Shot on the Run to the list. \n f the ranger selects two-weapon combat, he can choose from the following list whenever he gains a combat style feat: Double Slice, Improved Shield Bash, Quick Draw, and Two-Weapon Fighting. At 6th level, he adds Improved Two-Weapon Fighting and Two-Weapon Defense to the list. At 10th level, he adds Greater Two-Weapon Fighting and Two-Weapon Rend to the list. \n The benef its of the ranger’s chosen style feats apply only when he wears light, medium, or no armor. He loses all benef its of his combat style feats when wearing heavy armor. Once a ranger selects a combat style, it cannot be changed."
+			},
+			{
+				"title":"Endurance",
+				"description":"A ranger gains Endurance as a bonus feat at 3rd level."
+			},
+			{
+				"title":"Favored Terrain",
+				"description":"At 3rd level, a ranger may select a type of terrain from the Favored Terrains table. The ranger gains a +2 bonus on initiative checks and Knowledge (geography), Perception, Stealth, and Survival skill checks when he is in this terrain. A ranger traveling through his favored terrain normally leaves no trail and cannot be tracked (though he may leave a trail if he so chooses). \n At 8th level and every f ive levels thereafter, the ranger may select an additional favored terrain. In addition, at each such interval, the skill bonus and initiative bonus in any one favored terrain (including the one just selected, if so desired), increases by +2. \n If a specif ic terrain falls into more than one category of favored terrain, the ranger’s bonuses do not stack; he simply uses whichever bonus is higher."
+			},
+			{
+				"title":"Hunter's Bond",
+				"description":"At 4th level, a ranger forms a bond with his hunting companions. This bond can take one of two forms. Once the form is chosen, it cannot be changed. The f irst is a bond to his companions. This bond allows him to spend a move action to grant half his favored enemy bonus against a single target of the appropriate type to all allies within 30 feet who can see or hear him. This bonus lasts for a number of rounds equal to the ranger’s Wisdom modif ier (minimum 1). This bonus does not stack with any favored enemy bonuses possessed by his allies; they use whichever bonus is higher. \n The second option is to form a close bond with an animal companion. A ranger who selects an animal companion can choose from the following list: badger, bird, camel, cat (small), dire rat (see the Pathf inder RPG Bestiary), dog, horse, pony, snake (viper or constrictor), or wolf. If the campaign takes place wholly or partly in an aquatic environment, the ranger may choose a shark instead. This animal is a loyal companion that accompanies the ranger on his adventures as appropriate for its kind. A ranger’s animal companion shares his favored enemy and favored terrain bonuses. \n This ability functions like the druid animal companion ability (which is part of the Nature Bond class feature), except that the ranger’s effective druid level is equal to his ranger level – 3."
+			},
+			{
+				"title":"Spells",
+				"description":"Beginning at 4th level, a ranger gains the ability to cast a small number of divine spells, which are drawn from the ranger spell list presented in Chapter 10. A ranger must choose and prepare his spells in advance. \n To prepare or cast a spell, a ranger must have a Wisdom score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a ranger’s spell is 10 + the spell level + the ranger’s Wisdom modifier. \n Like other spellcasters, a ranger can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on Table 3–12. In addition, he receives bonus spells per day if he has a high Wisdom score (see Table 1–3). When Table 3–12 indicates that the ranger gets 0 spells per day of a given spell level, he gains only the bonus spells he would be entitled to based on his Wisdom score for that spell level. \n A ranger must spend 1 hour per day in quiet meditation to regain his daily allotment of spells. A ranger may prepare and cast any spell on the ranger spell list, provided that he can cast spells of that level, but he must choose which spells to prepare during his daily meditation. \n Through 3rd level, a ranger has no caster level. At 4th level and higher, his caster level is equal to his ranger level – 3."
+			},
+			{
+				"title":"Woodland Stride",
+				"description":"Starting at 7th level, a ranger may move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at his normal speed and without taking damage or suffering any other impairment. \n Thorns, briars, and overgrown areas that are enchanted or magically manipulated to impede motion, however, still affect him."
+			},
+			{
+				"title":"Swift Tracker",
+				"description":"Beginning at 8th level, a ranger can move at his normal speed while using Survival to follow tracks without taking the normal – 5 penalty. He takes only a –10 penalty (instead of the normal –20) when moving at up to twice normal speed while tracking."
+			},
+			{
+				"title":"Evasion",
+				"description":"When he reaches 9th level, a ranger can avoid even magical and unusual attacks with great agility. If he makes a successful Ref lex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if the ranger is wearing light armor, medium armor, or no armor. A helpless ranger does not gain the benef it of evasion."
+			},
+			{
+				"title":"Quarry",
+				"description":"At 11th level, a ranger can, as a standard action, denote one target within his line of sight as his quarry. Whenever he is following the tracks of his quarry, a ranger can take 10 on his Survival skill checks while moving at normal speed, without penalty. In addition, he receives a +2 insight bonus on attack rolls made against his quarry, and all critical threats are automatically conf irmed. A ranger can have no more than one quarry at a time and the creature’s type must correspond to one of his favored enemy types. He can dismiss this effect at any time as a free action, but he cannot select a new quarry for 24 hours. If the ranger sees proof that his quarry is dead, he can select a new quarry after waiting 1 hour."
+			},
+			{
+				"title":"Camouflage",
+				"description":"A ranger of 12th level or higher can use the Stealth skill to hide in any of his favored terrains, even if the terrain doesn’t grant cover or concealment."
+			},
+			{
+				"title":"Improved Evasion",
+				"description":"At 16th level, a ranger’s evasion improves. This ability works like evasion, except that while the ranger still takes no damage on a successful Ref lex saving throw against attacks, he henceforth takes only half damage on a failed save. A helpless ranger does not gain the benef it of improved evasion."
+			},
+			{
+				"title":"Hide in Plain Sight",
+				"description":"While in any of his favored terrains, a ranger of 17th level or higher can use the Stealth skill even while being observed."
+			},
+			{
+				"title":"Improved Quarry",
+				"description":"At 19th level, the ranger’s ability to hunt his quarry improves. He can now select a quarry as a free action, and can now take 20 while using Survival to track his quarry, while moving at normal speed without penalty. His insight bonus to attack his quarry increases to +4. If his quarry is killed or dismissed, he can select a new one after 10 minutes have passed."
+			},
+			{
+				"title":"Master Hunter",
+				"description":"A ranger of 20th level becomes a master hunter. He can always move at full speed while using Survival to follow tracks without penalty. He can, as a standard action, make a single attack against a favored enemy at his full attack bonus. If the attack hits, the target takes damage normally and must make a Fortitude save or die. The DC of this save is equal to 10 + 1/2 the ranger’s level + the ranger’s Wisdom modif ier. A ranger can choose instead to deal an amount of nonlethal damage equal to the creature’s current hit points. A successful save negates this damage. A ranger can use this ability once per day against each favored enemy type he possesses, but not against the same creature more than once in a 24-hour period."
+			}
+		],
+		"ex-class":""
+
+	},{
+		"title":"Rogue",
+		"enum":"Rogue",
+		"description":"Life is an endless adventure for those who live by their wits. Ever just one step ahead of danger, rogues bank on their cunning, skill, and charm to bend fate to their favor. Never knowing what to expect, they prepare for everything, becoming masters of a wide variety of skills, training themselves to be adept manipulators, agile acrobats, shadowy stalkers, or masters of any of dozens of other professions or talents. Thieves and gamblers, fast talkers and diplomats, bandits and bounty hunters, and explorers and investigators all might be considered rogues, as well as countless other professions that rely upon wits, prowess, or luck. Although many rogues favor cities and the innumerable opportunities of civilization, some embrace lives on the road, journeying far, meeting exotic people, and facing fantastic danger in pursuit of equally fantastic riches. In the end, any who desire to shape their fates and live life on their own terms might come to be called rogues.",
+		"role":"Rogues excel at moving about unseen and catching foes unaware, and tend to avoid head-to-head combat. Their varied skills and abilities allow them to be highly versatile, with great variations in expertise existing between different rogues. Most, however, excel in overcoming hindrances of all types, from unlocking doors and disarming traps to outwitting magical hazards and conning dull-witted opponents.",
+		"alignment":"Any",
+		"hitdie":8,
+		"skills":[
+			"Acrobatics",
+			"Appraise",
+			"Bluff",
+			"Climb",
+			"Craft",
+			"Diplomacy",
+			"Disable Device",
+			"Disguise",
+			"Escape Artist",
+			"Intimidate",
+			"Knowledge Dungeoneering",
+			"Knowledge Local",
+			"Linguistics",
+			"Perception",
+			"Perform",
+			"Profession",
+			"Sense Motive",
+			"Sleight of Hand",
+			"Stealth",
+			"Swim",
+			"Use Magic Device"
+		],
+		"ranks":8,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":0,
+				"ref":2,
+				"will":0,
+				"special":[
+					"Sneak Attack",
+					"Trapfinding"
+				]
+			},
+			{
+				"level":2,
+				"bab":"1",
+				"fort":0,
+				"ref":3,
+				"will":0,
+				"special":[
+					"Evasion",
+					"Rogue Talent"
+				]
+			},
+			{
+				"level":3,
+				"bab":"2",
+				"fort":1,
+				"ref":3,
+				"will":1,
+				"special":[
+					"Sneak Attack",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":4,
+				"bab":"3",
+				"fort":1,
+				"ref":4,
+				"will":1,
+				"special":[
+					"Rogue Talent",
+					"Uncanny Dodge"
+				]
+			},
+			{
+				"level":5,
+				"bab":"3",
+				"fort":1,
+				"ref":4,
+				"will":1,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":6,
+				"bab":"4",
+				"fort":2,
+				"ref":5,
+				"will":2,
+				"special":[
+					"Rogue Talent",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":7,
+				"bab":"5",
+				"fort":2,
+				"ref":5,
+				"will":2,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":8,
+				"bab":"6/1",
+				"fort":2,
+				"ref":6,
+				"will":2,
+				"special":[
+					"Improved Uncanny Dodge",
+					"Rogue Talent"
+				]
+			},
+			{
+				"level":9,
+				"bab":"6/1",
+				"fort":3,
+				"ref":6,
+				"will":3,
+				"special":[
+					"Sneak Attack",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":10,
+				"bab":"7/2",
+				"fort":3,
+				"ref":7,
+				"will":3,
+				"special":[
+					"Advanced Talents",
+					"Rogue Talent"
+				]
+			},
+			{
+				"level":11,
+				"bab":"8/3",
+				"fort":3,
+				"ref":7,
+				"will":3,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":12,
+				"bab":"9/4",
+				"fort":4,
+				"ref":8,
+				"will":4,
+				"special":[
+					"Rogue Talent",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":13,
+				"bab":"9/4",
+				"fort":4,
+				"ref":8,
+				"will":4,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":14,
+				"bab":"10/5",
+				"fort":4,
+				"ref":9,
+				"will":4,
+				"special":[
+					"Rogue Talent"
+				]
+			},
+			{
+				"level":15,
+				"bab":"11/6/1",
+				"fort":5,
+				"ref":9,
+				"will":5,
+				"special":[
+					"Sneak Attack",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":16,
+				"bab":"12/7/2",
+				"fort":5,
+				"ref":10,
+				"will":5,
+				"special":[
+					"Rogue Talent"
+				]
+			},
+			{
+				"level":17,
+				"bab":"12/7/2",
+				"fort":5,
+				"ref":10,
+				"will":5,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":18,
+				"bab":"13/8/3",
+				"fort":6,
+				"ref":11,
+				"will":6,
+				"special":[
+					"Rogue Talent",
+					"Trap Sense"
+				]
+			},
+			{
+				"level":19,
+				"bab":"14/9/4",
+				"fort":6,
+				"ref":11,
+				"will":6,
+				"special":[
+					"Sneak Attack"
+				]
+			},
+			{
+				"level":20,
+				"bab":"15/10/5",
+				"fort":6,
+				"ref":12,
+				"will":6,
+				"special":[
+					"Master Strike",
+					"Rogue Talent"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Rogues are prof icient with all simple weapons, plus the hand crossbow, rapier, sap, shortbow, and short sword. They are prof icient with light armor, but not with shields.",
+			},
+			{
+				"title":"Sneak Attack",
+				"description":"If a rogue can catch an opponent when he is unable to defend himself effectively from her attack, she can strike a vital spot for extra damage. \n The rogue’s attack deals extra damage anytime her target would be denied a Dexterity bonus to AC (whether the target actually has a Dexterity bonus or not), or when the rogue f lanks her target. This extra damage is 1d6 at 1st level, and increases by 1d6 every two rogue levels thereafter. Should the rogue score a critical hit with a sneak attack, this extra damage is not multiplied. Ranged attacks can count as sneak attacks only if the target is within 30 feet. \n With a weapon that deals nonlethal damage (like a sap, whip, or an unarmed strike), a rogue can make a sneak attack that deals nonlethal damage instead of lethal damage. She cannot use a weapon that deals lethal damage to deal nonlethal damage in a sneak attack, not even with the usual –4 penalty. \n The rogue must be able to see the target well enough to pick out a vital spot and must be able to reach such a spot. A rogue cannot sneak attack while striking a creature with concealment.",
+			},
+			{
+				"title":"Trapfinding",
+				"description":"A rogue adds 1/2 her level to Perception skill checks made to locate traps and to Disable Device skill checks (minimum +1). A rogue can use Disable Device to disarm magic traps."
+			},
+			{
+				"title":"Evasion",
+				"description":"At 2nd level and higher, a rogue can avoid even magical and unusual attacks with great agility. If she makes a successful Ref lex saving throw against an attack that normally deals half damage on a successful save, she instead takes no damage. Evasion can be used only if the rogue is wearing light armor or no armor. A helpless rogue does not gain the benef it of evasion."
+			},
+			{
+				"title":"Rogue Talent",
+				"description":"As a rogue gains experience, she learns a number of talents that aid her and confound her foes. Starting at 2nd level, a rogue gains one rogue talent. She gains an additional rogue talent for every 2 levels of rogue attained after 2nd level. A rogue cannot select an individual talent more than once. \n Talents marked with an asterisk add effects to a rogue’s sneak attack. Only one of these talents can be applied to an individual attack and the decision must be made before the attack roll is made."
+			},
+			{
+				"title":"Trap Sense",
+				"description":"At 3rd level, a rogue gains an intuitive sense that alerts her to danger from traps, giving her a +1 bonus on Ref lex saves made to avoid traps and a +1 dodge bonus to AC against attacks made by traps. These bonuses rise to +2 when the rogue reaches 6th level, to +3 when she reaches 9th level, to +4 when she reaches 12th level, to +5 at 15th, and to +6 at 18th level. \n Trap sense bonuses gained from multiple classes stack."
+			},
+			{
+				"title":"Uncanny Dodge",
+				"description":"Starting at 4th level, a rogue can react to danger before her senses would normally allow her to do so. She cannot be caught f lat-footed, nor does she lose her Dex bonus to AC if the attacker is invisible. She still loses her Dexterity bonus to AC if immobilized. A rogue with this ability can still lose her Dexterity bonus to AC if an opponent successfully uses the feint action (see Chapter 8) against her. \n If a rogue already has uncanny dodge from a different class, she automatically gains improved uncanny dodge (see below) instead."
+			},
+			{
+				"title":"Improved Uncanny Dodge",
+				"description":"A rogue of 8th level or higher can no longer be f lanked. \n This defense denies another rogue the ability to sneak attack the character by f lanking her, unless the attacker has at least four more rogue levels than the target does. \n If a character already has uncanny dodge (see above) from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to f lank the character."
+			},
+			{
+				"title":"Advanced Talents",
+				"description":"At 10th level, and every two levels thereafter, a rogue can choose one of the following advanced talents in place of a rogue talent."
+			},
+			{
+				"title":"Master Strike",
+				"description":"Upon reaching 20th level, a rogue becomes incredibly deadly when dealing sneak attack damage. Each time the rogue deals sneak attack damage, she can choose one of the following three effects: the target can be put to sleep for 1d4 hours, paralyzed for 2d6 rounds, or slain. Regardless of the effect chosen, the target receives a Fortitude save to negate the additional effect. The DC of this save is equal to 10 + 1/2 the rogue’s level + the rogue’s Intelligence modif ier. Once a creature has been the target of a master strike, regardless of whether or not the save is made, that creature is immune to that rogue’s master strike for 24 hours. Creatures that are immune to sneak attack damage are also immune to this ability."
+			}
+		],
+		"ex-class":""
+
+	},
+	{
+		"title":"Sorcerer",
+		"enum":"Sorcerer",
+		"description":"Scions of innately magical bloodlines, the chosen of deities, the spawn of monsters, pawns of fate and destiny, or simply f lukes of f ickle magic, sorcerers look within themselves for arcane prowess and draw forth might few mortals can imagine. Emboldened by lives ever threatening to be consumed by their innate powers, these magic-touched souls endlessly indulge in and ref ine their mysterious abilities, gradually learning how to harness their birthright and coax forth ever greater arcane feats. Just as varied as these innately powerful spellcasters’ abilities and inspirations are the ways in which they choose to utilize their gifts. While some seek to control their abilities through meditation and discipline, becoming masters of their fantastic birthright, others give in to their magic, letting it rule their lives with often explosive results. Regardless, sorcerers live and breathe that which other spellcasters devote their lives to mastering, and for them magic is more than a boon or a f ield of study; it is life itself.",
+		"role":"Sorcerers excel at casting a selection of favored spells frequently, making them powerful battle mages. As they become familiar with a specif ic and ever-widening set of spells, sorcerers often discover new and versatile ways of making use of magics other spellcasters might overlook. Their bloodlines also grant them additional abilities, assuring that no two sorcerers are ever quite alike.",
+		"alignment":"Any",
+		"hitdie":6,
+		"skills":[
+			"Appraise",
+			"Bluff",
+			"Craft",
+			"Fly",
+			"Intimidate",
+			"Knowledge Arcana",
+			"Profession",
+			"Spellcraft",
+			"Use Magic Device"
+		],
+		"ranks":2,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":0,
+				"ref":0,
+				"will":2,
+				"special":[
+					"Bloodline Power",
+					"Cantrips",
+					"Eschew Materials"
+				]
+			},
+			{
+				"level":2,
+				"bab":"1",
+				"fort":0,
+				"ref":0,
+				"will":3,
+				"special":[
+				]
+			},
+			{
+				"level":3,
+				"bab":"1",
+				"fort":1,
+				"ref":1,
+				"will":3,
+				"special":[
+					"Bloodline Power",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":4,
+				"bab":"2",
+				"fort":1,
+				"ref":1,
+				"will":4,
+				"special":[
+				]
+			},
+			{
+				"level":5,
+				"bab":"2",
+				"fort":1,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":6,
+				"bab":"3",
+				"fort":2,
+				"ref":2,
+				"will":5,
+				"special":[
+				]
+			},
+			{
+				"level":7,
+				"bab":"3",
+				"fort":2,
+				"ref":2,
+				"will":5,
+				"special":[
+					"Bloodline Feat",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":8,
+				"bab":"4",
+				"fort":2,
+				"ref":2,
+				"will":6,
+				"special":[
+				]
+			},
+			{
+				"level":9,
+				"bab":"4",
+				"fort":3,
+				"ref":3,
+				"will":6,
+				"special":[
+					"Bloodline Power",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":10,
+				"bab":"5",
+				"fort":3,
+				"ref":3,
+				"will":7,
+				"special":[
+				]
+			},
+			{
+				"level":11,
+				"bab":"5",
+				"fort":3,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":12,
+				"bab":"6/1",
+				"fort":4,
+				"ref":4,
+				"will":8,
+				"special":[
+				]
+			},
+			{
+				"level":13,
+				"bab":"6/1",
+				"fort":4,
+				"ref":4,
+				"will":8,
+				"special":[
+					"Bloodline Feat",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":14,
+				"bab":"7/2",
+				"fort":4,
+				"ref":4,
+				"will":9,
+				"special":[
+				]
+			},
+			{
+				"level":15,
+				"bab":"7/2",
+				"fort":5,
+				"ref":5,
+				"will":9,
+				"special":[
+					"Bloodline Power",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":16,
+				"bab":"8/3",
+				"fort":5,
+				"ref":5,
+				"will":10,
+				"special":[
+				]
+			},
+			{
+				"level":17,
+				"bab":"8/3",
+				"fort":5,
+				"ref":5,
+				"will":10,
+				"special":[
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":18,
+				"bab":"9/4",
+				"fort":6,
+				"ref":6,
+				"will":11,
+				"special":[
+				]
+			},
+			{
+				"level":19,
+				"bab":"9/4",
+				"fort":6,
+				"ref":6,
+				"will":11,
+				"special":[
+					"Bloodline Feat",
+					"Bloodline Spell"
+				]
+			},
+			{
+				"level":20,
+				"bab":"10/5",
+				"fort":6,
+				"ref":6,
+				"will":12,
+				"special":[
+					"Bloodline Power"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Sorcerers are prof icient with all simple weapons. They are not prof icient with any type of armor or shield. Armor interferes with a sorcerer’s gestures, which can cause her spells with somatic components to fail.",
+			},
+			{
+				"title":"Spells",
+				"description":"A sorcerer casts arcane spells drawn primarily from the sorcerer/wizard spell list presented in Chapter 10. She can cast any spell she knows without preparing it ahead of time. To learn or cast a spell, a sorcerer must have a Charisma score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a sorcerer’s spell is 10 + the spell level + the sorcerer’s Charisma modifier. \n Like other spellcasters, a sorcerer can cast only a certain number of spells of each spell level per day. Her base daily spell allotment is given on Table 3–14. In addition, she receives bonus spells per day if she has a high Charisma score. \n A sorcerer’s selection of spells is extremely limited. A sorcerer begins play knowing four 0-level spells and two 1st-level spells of her choice. At each new sorcerer level, she gains one or more new spells, as indicated on Table 3–15. (Unlike spells per day, the number of spells a sorcerer knows is not affected by her Charisma score; the numbers on Table 3–15 are f ixed.) These new spells can be common spells chosen from the sorcerer/wizard spell list, or they can be unusual spells that the sorcerer has gained some understanding of through study. \n Upon reaching 4th level, and at every even-numbered sorcerer level after that (6th, 8th, and so on), a sorcerer can choose to learn a new spell in place of one she already knows. In effect, the sorcerer loses the old spell in exchange for the new one. The new spell’s level must be the same as that of the spell being exchanged. A sorcerer may swap only a single spell at any given level, and must choose whether or not to swap the spell at the same time that she gains new spells known for the level. \n Unlike a wizard or a cleric, a sorcerer need not prepare her spells in advance. She can cast any spell she knows at any time, assuming she has not yet used up her spells per day for that spell level.",
+			},
+			{
+				"title":"Bloodline",
+				"description":"Each sorcerer has a source of magic somewhere in her heritage that grants her spells, bonus feats, an additional class skill, and other special abilities. This source can represent a blood relation or an extreme event involving a creature somewhere in the family’s past. For example, a sorcerer might have a dragon as a distant relative or her grandfather might have signed a terrible contract with a devil. Regardless of the source, this influence manifests in a number of ways as the sorcerer gains levels. A sorcerer must pick one bloodline upon taking her first level of sorcerer. Once made, this choice cannot be changed. \n At 3rd level, and every two levels thereafter, a sorcerer learns an additional spell, derived from her bloodline. These spells are in addition to the number of spells given on Table 3–15. These spells cannot be exchanged for different spells at higher levels. \n At 7th level, and every six levels thereafter, a sorcerer receives one bonus feat, chosen from a list specif ic to each bloodline. The sorcerer must meet the prerequisites for these bonus feats."
+			},
+			{
+				"title":"Cantrips",
+				"description":"Sorcerers learn a number of cantrips, or 0-level spells, as noted on Table 3–15 under “Spells Known.” These spells are cast like any other spell, but they do not consume any slots and may be used again."
+			},
+			{
+				"title":"Eschew Materials",
+				"description":"A sorcerer gains Eschew Materials as a bonus feat at 1st level."
+			}
+		],
+		"ex-class":""
+
+	},
+	{
+		"title":"Wizard",
+		"enum":"Wizard",
+		"description":"Beyond the veil of the mundane hide the secrets of absolute power. The works of beings beyond mortals, the legends of realms where gods and spirits tread, the lore of creations both wondrous and terrible—such mysteries call to those with the ambition and the intellect to rise above the common folk to grasp true might. Such is the path of the wizard. These shrewd magic-users seek, collect, and covet esoteric knowledge, drawing on cultic arts to work wonders beyond the abilities of mere mortals. While some might choose a particular f ield of magical study and become masters of such powers, others embrace versatility, reveling in the unbounded wonders of all magic. In either case, wizards prove a cunning and potent lot, capable of smiting their foes, empowering their allies, and shaping the world to their every desire.",
+		"role":"While universalist wizards might study to prepare themselves for any manner of danger, specialist wizards research schools of magic that make them exceptionally skilled within a specif ic focus. Yet no matter their specialty, all wizards are masters of the impossible and can aid their allies in overcoming any danger.",
+		"alignment":"Any",
+		"hitdie":6,
+		"skills":[
+			"Appraise",
+			"Craft",
+			"Fly",
+			"Knowledge Arcana",
+			"Knowledge Dungeoneering",
+			"Knowledge Engineering",
+			"Knowledge Geography",
+			"Knowledge History",
+			"Knowledge Local",
+			"Knowledge Nature",
+			"Knowledge Nobility",
+			"Knowledge Planes",
+			"Knowledge Religion",
+			"Linguistics",
+			"Profession",
+			"Spellcraft"
+
+		],
+		"ranks":2,
+		"chart":[
+			{
+				"level":1,
+				"bab":"0",
+				"fort":0,
+				"ref":0,
+				"will":2,
+				"special":[
+					"Arcane Bond",
+					"Arcane School",
+					"Cantrips",
+					"Scribe Scroll"
+				]
+			},
+			{
+				"level":2,
+				"bab":"1",
+				"fort":0,
+				"ref":0,
+				"will":3,
+				"special":[
+				]
+			},
+			{
+				"level":3,
+				"bab":"1",
+				"fort":1,
+				"ref":1,
+				"will":3,
+				"special":[
+				]
+			},
+			{
+				"level":4,
+				"bab":"2",
+				"fort":1,
+				"ref":1,
+				"will":4,
+				"special":[
+				]
+			},
+			{
+				"level":5,
+				"bab":"2",
+				"fort":1,
+				"ref":1,
+				"will":4,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":6,
+				"bab":"3",
+				"fort":2,
+				"ref":2,
+				"will":5,
+				"special":[
+				]
+			},
+			{
+				"level":7,
+				"bab":"3",
+				"fort":2,
+				"ref":2,
+				"will":5,
+				"special":[
+				]
+			},
+			{
+				"level":8,
+				"bab":"4",
+				"fort":2,
+				"ref":2,
+				"will":6,
+				"special":[
+				]
+			},
+			{
+				"level":9,
+				"bab":"4",
+				"fort":3,
+				"ref":3,
+				"will":6,
+				"special":[
+				]
+			},
+			{
+				"level":10,
+				"bab":"5",
+				"fort":3,
+				"ref":3,
+				"will":7,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":11,
+				"bab":"5",
+				"fort":3,
+				"ref":3,
+				"will":7,
+				"special":[
+				]
+			},
+			{
+				"level":12,
+				"bab":"6/1",
+				"fort":4,
+				"ref":4,
+				"will":8,
+				"special":[
+				]
+			},
+			{
+				"level":13,
+				"bab":"6/1",
+				"fort":4,
+				"ref":4,
+				"will":8,
+				"special":[
+				]
+			},
+			{
+				"level":14,
+				"bab":"7/2",
+				"fort":4,
+				"ref":4,
+				"will":9,
+				"special":[
+				]
+			},
+			{
+				"level":15,
+				"bab":"7/2",
+				"fort":5,
+				"ref":5,
+				"will":9,
+				"special":[
+					"Bonus Feat"
+				]
+			},
+			{
+				"level":16,
+				"bab":"8/3",
+				"fort":5,
+				"ref":5,
+				"will":10,
+				"special":[
+				]
+			},
+			{
+				"level":17,
+				"bab":"8/3",
+				"fort":5,
+				"ref":5,
+				"will":10,
+				"special":[
+				]
+			},
+			{
+				"level":18,
+				"bab":"9/4",
+				"fort":6,
+				"ref":6,
+				"will":11,
+				"special":[
+				]
+			},
+			{
+				"level":19,
+				"bab":"9/4",
+				"fort":6,
+				"ref":6,
+				"will":11,
+				"special":[
+				]
+			},
+			{
+				"level":20,
+				"bab":"10/5",
+				"fort":6,
+				"ref":6,
+				"will":12,
+				"special":[
+					"Bonus Feat"
+				]
+			}
+
+		],
+		"features":[
+			{
+				"title":"Proficiency",
+				"description":"Wizards are prof icient with the club, dagger, heavy crossbow, light crossbow, and quarterstaff, but not with any type of armor or shield. Armor interferes with a wizard’s movements, which can cause his spells with somatic components to fail.",
+			},
+			{
+				"title":"Spells",
+				"description":"A wizard casts arcane spells drawn from the sorcerer/wizard spell list presented in Chapter 10. A wizard must choose and prepare his spells ahead of time. \n To learn, prepare, or cast a spell, the wizard must have an Intelligence score equal to at least 10 + the spell level. The Diff iculty Class for a saving throw against a wizard’s spell is 10 + the spell level + the wizard’s Intelligence modif ier.\n A wizard can cast only a certain number of spells of each spell level per day. His base daily spell allotment is given on Table 3–16. In addition, he receives bonus spells per day if he has a high Intelligence score. \n A wizard may know any number of spells. He must choose and prepare his spells ahead of time by getting 8 hours of sleep and spending 1 hour studying his spellbook. While studying, the wizard decides which spells to prepare.",
+			},
+			{
+				"title":"Bonus Languages",
+				"description":"A wizard may substitute Draconic for one of the bonus languages available to the character because of his race."
+			},
+			{
+				"title":"Arcane Bond",
+				"description":"At 1st level, wizards form a powerful bond with an object or a creature. This bond can take one of two forms: a familiar or a bonded object. A familiar is a magical pet that enhances the wizard’s skills and senses and can aid him in magic, while a bonded object is an item a wizard can use to cast additional spells or to serve as a magical item. Once a wizard makes this choice, it is permanent and cannot be changed. Rules for familiars appear on page 82, while rules for bonded items are given below. \n Wizards who select a bonded object begin play with one at no cost. Objects that are the subject of an arcane bond must fall into one of the following categories: amulet, ring, staff, wand, or weapon. These objects are always masterwork quality. Weapons acquired at 1st level are not made of any special material. If the object is an amulet or ring, it must be worn to have effect, while staves, wands, and weapons must be held in one hand. If a wizard attempts to cast a spell without his bonded object worn or in hand, he must make a concentration check or lose the spell. The DC for this check is equal to 20 + the spell’s level. If the object is a ring or amulet, it occupies the ring or neck slot accordingly. \n A bonded object can be used once per day to cast any one spell that the wizard has in his spellbook and is capable of casting, even if the spell is not prepared. This spell is treated like any other spell cast by the wizard, including casting time, duration, and other effects dependent on the wizard’s level. This spell cannot be modif ied by metamagic feats or other abilities. The bonded object cannot be used to cast spells from the wizard’s opposition schools (see arcane school). \n A wizard can add additional magic abilities to his bonded object as if he has the required item creation feats and if he meets the level prerequisites of the feat. For example, a wizard with a bonded dagger must be at least 5th level to add magic abilities to the dagger (see the Craft Magic Arms and Armor feat in Chapter 5). If the bonded object is a wand, it loses its wand abilities when its last charge is consumed, but it is not destroyed and it retains all of its bonded object properties and can be used to craft a new wand. The magic properties of a bonded object, including any magic abilities added to the object, only function for the wizard who owns it. If a bonded object’s owner dies, or the item is replaced, the object reverts to being an ordinary masterwork item of the appropriate type. \n If a bonded object is damaged, it is restored to full hit points the next time the wizard prepares his spells. If the object of an arcane bond is lost or destroyed, it can be replaced after 1 week in a special ritual that costs 200 gp per wizard level plus the cost of the masterwork item. This ritual takes 8 hours to complete. Items replaced in this way do not possess any of the additional enchantments of the previous bonded item. A wizard can designate an existing magic item as his bonded item. This functions in the same way as replacing a lost or destroyed item except that the new magic item retains its abilities while gaining the benef its and drawbacks of becoming a bonded item.",
+			},
+			{
+				"title":"Arcane School",
+				"description":"A wizard can choose to specialize in one school of magic, gaining additional spells and powers based on that school. This choice must be made at 1st level, and once made, it cannot be changed. A wizard that does not select a school receives the universalist school instead. \n A wizard that chooses to specialize in one school of magic must select two other schools as his opposition schools, representing knowledge sacrif iced in one area of arcane lore to gain mastery in another. A wizard who prepares spells from his opposition schools must use two spell slots of that level to prepare the spell. For example, a wizard with evocation as an opposition school must expend two of his available 3rd-level spell slots to prepare a fireball. In addition, a specialist takes a –4 penalty on any skill checks made when crafting a magic item that has a spell from one of his opposition schools as a prerequisite. A universalist wizard can prepare spells from any school without restriction. \n Each arcane school gives the wizard a number of school powers. In addition, specialist wizards receive an additional spell slot of each spell level he can cast, from 1st on up. Each day, a wizard can prepare a spell from his specialty school in that slot. This spell must be in the wizard’s spellbook. A wizard can select a spell modif ied by a metamagic feat to prepare in his school slot, but it uses up a higher-level spell slot. Wizards with the universalist school do not receive a school slot."
+			},
+			{
+				"title":"Cantrips",
+				"description":"Wizards can prepare a number of cantrips, or 0-level spells, each day, as noted on Table 3–16 under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again. A wizard can prepare a cantrip from an opposed school, but it uses up two of his available slots.",
+			},
+			{
+				"title":"Scribe Scroll",
+				"description":"At 1st level, a wizard gains Scribe Scroll as a bonus feat."
+			},
+			{
+				"title":"Bonus Feats",
+				"description":"At 5th, 10th, 15th, and 20th level, a wizard gains a bonus feat. At each such opportunity, he can choose a metamagic feat, an item creation feat, or Spell Mastery. The wizard must still meet all prerequisites for a bonus feat, including caster level minimums. These bonus feats are in addition to the feats that a character of any class gets from advancing levels. The wizard is not limited to the categories of item creation feats, metamagic feats, or Spell Mastery when choosing those feats.",
+			},
+			{
+				"title":"Spellbooks",
+				"description":"A wizard must study his spellbook each day to prepare his spells. He cannot prepare any spell not recorded in his spellbook, except for read magic, which all wizards can prepare from memory. \n A wizard begins play with a spellbook containing all 0-level wizard spells (except those from his opposed schools, if any; see Arcane Schools) plus three 1st-level spells of his choice. The wizard also selects a number of additional 1st-level spells equal to his Intelligence modif ier to add to the spellbook. At each new wizard level, he gains two new spells of any spell level or levels that he can cast (based on his new wizard level) for his spellbook. At any time, a wizard can also add spells found in other wizards’ spellbooks to his own."
 			}
 		],
 		"ex-class":""

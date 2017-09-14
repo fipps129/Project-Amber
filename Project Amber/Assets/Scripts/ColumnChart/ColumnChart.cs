@@ -22,20 +22,30 @@ public class ColumnChart : MonoBehaviour {
 
     private void ColCountChanged()
     {
-        if(oldColNum < colNum)
+        int safeGuard = 0;
+        while(oldColNum != colNum)
         {
-            GameObject newCol = Instantiate(columnObj, this.transform) as GameObject;
-            columnList.Add(newCol.GetComponent<Column>());
-            oldColNum ++;
-        }
-        else if(oldColNum > colNum)
-        {
-            if (columnList.Count == 1)
-                return;
-            Column oldCol = columnList[columnList.Count - 1];
-            columnList.Remove(oldCol);
-            GameObject.DestroyImmediate(oldCol.gameObject);
-            oldColNum --;
+            safeGuard++;
+            if(oldColNum < colNum)
+            {
+                GameObject newCol = Instantiate(columnObj, this.transform) as GameObject;
+                columnList.Add(newCol.GetComponent<Column>());
+                oldColNum ++;
+            }
+            else if(oldColNum > colNum)
+            {
+                if (columnList.Count == 1)
+                    return;
+                Column oldCol = columnList[columnList.Count - 1];
+                columnList.Remove(oldCol);
+                GameObject.DestroyImmediate(oldCol.gameObject);
+                oldColNum --;
+            }
+            if(safeGuard >=1000)
+            {
+                Debug.Log("Safe guard triggered!");
+                break;
+            }
         }
     }
 
