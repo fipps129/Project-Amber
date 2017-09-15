@@ -73,22 +73,16 @@ public class Utility
         {
             case AbilityEnum.Strength:
                 return "STR";
-                break;
             case AbilityEnum.Dexterity:
                 return "DEX";
-                break;
             case AbilityEnum.Constitution:
                 return "CON";
-                break;
             case AbilityEnum.Intelligence:
                 return "INT";
-                break;
             case AbilityEnum.Wisdom:
                 return "WIS";
-                break;
             case AbilityEnum.Charisma:
                 return "CHA";
-                break;
             default:
                 return "ERROR";
         }

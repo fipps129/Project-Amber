@@ -30,7 +30,17 @@ public class Screen_Base : MonoBehaviour {
 
     }
 
-    virtual public void LoadScreenData()
+    virtual public void PreviousScreen()
+    {
+
+    }
+
+    virtual public void LoadScreenData() // Loads all JSON data from file
+    {
+
+    }
+
+    virtual public void LoadScreen() // Loads the screen and populates loaded data
     {
 
     }

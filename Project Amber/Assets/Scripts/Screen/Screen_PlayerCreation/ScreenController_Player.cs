@@ -12,6 +12,8 @@ public class ScreenController_Player : MonoBehaviour {
     private Screen_Base AbilityScreen;
     [SerializeField]
     private Screen_Base RaceScreen;
+    [SerializeField]
+    private Screen_Base ClassScreen;
 
     [SerializeField]
     private List<Screen_Base> MainList = new List<Screen_Base>();
@@ -31,16 +33,33 @@ public class ScreenController_Player : MonoBehaviour {
             }
         }
 
+        LoadAllData();
+
         //Show Ability Calculator animation
     }
 	
+    private void LoadAllData()
+    {
+        RaceScreen.LoadScreenData();
+        ClassScreen.LoadScreenData();
+
+    }
+
     public void NextPage()
     {
         mainIndex++;
         currentMenu.HideMenu();
         MainList[mainIndex].ShowMenu();
         currentMenu = MainList[mainIndex];
-        currentMenu.LoadScreenData();
+        currentMenu.LoadScreen();
     }
 
+    public void PrevousPage()
+    {
+        mainIndex--;
+        currentMenu.HideMenu();
+        MainList[mainIndex].ShowMenu();
+        currentMenu = MainList[mainIndex];
+        //currentMenu.LoadScreenData();
+    }
 }

@@ -45,6 +45,11 @@ public class RaceScreen : Screen_Base {
         sc_Player.NextPage();
     }
 
+    public override void PreviousScreen()
+    {
+        sc_Player.PrevousPage();
+    }
+
     public override void LoadScreenData()
     {
         TextAsset textFile = (TextAsset)Resources.Load("JSON_files/races", typeof(TextAsset));// (TextAsset)Resources.Load("races.json"), typeof(TextAsset));
@@ -83,10 +88,11 @@ public class RaceScreen : Screen_Base {
             raceDropdown.AddOptions(raceName);
             index++;
         }
-
         raceDropdown.SetOptions();
+    }
 
-        
+    public override void LoadScreen()
+    {
         raceChart.SetScores(raceList[currentRace].abilities);
         SetTraitText(raceList[currentRace].racialTraits);
         SetDescriptionText();

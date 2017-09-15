@@ -8,6 +8,9 @@ using EnumTypes;
 public class ClassScreen : Screen_Base {
 
     [SerializeField]
+    private ScreenController_Player sc_Player;
+
+    [SerializeField]
     private Text descriptionText;
     [SerializeField]
     private ColumnChart skillChart;
@@ -20,6 +23,13 @@ public class ClassScreen : Screen_Base {
     public Dictionary<ClassEnum, JSONObject> classObjDict = new Dictionary<ClassEnum, JSONObject>();
     public Dictionary<ClassEnum, Class> classList = new Dictionary<ClassEnum, Class>();
     private ClassEnum currentClass;
+
+    private Dictionary<ClassEnum, Sprite> portraitDict = new Dictionary<ClassEnum, Sprite>();
+
+    [SerializeField]
+    private Image classPortrait;
+
+    private Character character;
 
     public override void HideMenu()
     {
@@ -36,8 +46,15 @@ public class ClassScreen : Screen_Base {
         base.NextScreen();
     }
 
+    public override void PreviousScreen()
+    {
+        sc_Player.PrevousPage();
+    }
+
     public override void LoadScreenData()
     {
+        character = SaveManager.manager.character;
+
         TextAsset textFile = (TextAsset)Resources.Load("JSON_files/classes", typeof(TextAsset));
         JSONObject classObj = new JSONObject(textFile.ToString());
 
@@ -94,13 +111,25 @@ public class ClassScreen : Screen_Base {
             classDropdown.AddOptions(className);
             index++;
         }
-
         classDropdown.SetOptions();
+    }
+
+    public override void LoadScreen()
+    {
+        Debug.Log(classList.Count);
+        Debug.Log(character.race.raceType.ToString());
+        portraitDict.Clear();
+
+        foreach(ClassEnum _class in classList.Keys)
+        {
+            portraitDict.Add(_class, (Sprite)Resources.Load(("Sprites/Class_Portraits/" + character.race.raceType.ToString() + "_classes/" + character.race.raceType.ToString() + "_" + _class.ToString()), typeof(Sprite)));
+        }
+
 
         SetDescriptionText();
         SetSkillText();
         SetClassFeatures();
-
+        SetPortrait();
     }
 
     public void DropdownValueChanged()
@@ -111,6 +140,7 @@ public class ClassScreen : Screen_Base {
         SetSkillText();
         SetDescriptionText();
         SetClassFeatures();
+        SetPortrait();
     }
 
     private void SetDescriptionText()
@@ -137,7 +167,12 @@ public class ClassScreen : Screen_Base {
         classFeatures.AddItems(new List<string>(classList[currentClass].featureDict.Keys));
         foreach (string feature in classList[currentClass].featureDict.Keys)
         {
-            Debug.Log(feature);
+            //Debug.Log(feature);
         }
+    }
+
+    private void SetPortrait()
+    {
+        classPortrait.sprite = portraitDict[classList[currentClass].classType];
     }
 }
