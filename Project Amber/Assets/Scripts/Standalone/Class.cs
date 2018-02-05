@@ -21,6 +21,6 @@ public class Class {
 
     public List<ChartRow> classChart = new List<ChartRow>();
 
-   //public List<DefObj> featureList = new List<DefObj>();
     public Dictionary<string, string> featureDict = new Dictionary<string, string>();
+    
 }

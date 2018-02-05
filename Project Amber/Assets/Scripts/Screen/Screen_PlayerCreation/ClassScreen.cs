@@ -29,6 +29,9 @@ public class ClassScreen : Screen_Base {
     [SerializeField]
     private Image classPortrait;
 
+    [SerializeField]
+    public SerDictionary classesDictionary = new SerDictionary();
+
     private Character character;
 
     public override void HideMenu()
@@ -101,10 +104,14 @@ public class ClassScreen : Screen_Base {
 
             foreach (JSONObject feature in jObj.GetField("features").list)
             {
+                /*
                 DefObj def = new DefObj();
                 def.title = Utility.TrimString(feature.GetField("title").ToString());
                 def.description = Utility.TrimString(feature.GetField("description").ToString());
-                _class.featureDict.Add(def.title, def.description);
+                */
+                string f_title = Utility.TrimString(feature.GetField("title").ToString());
+                string f_description = Utility.TrimString(feature.GetField("description").ToString());
+                _class.featureDict.Add(f_title, f_description);
             }
 
             classList.Add(_class.classType, _class);
@@ -174,5 +181,10 @@ public class ClassScreen : Screen_Base {
     private void SetPortrait()
     {
         classPortrait.sprite = portraitDict[classList[currentClass].classType];
+    }
+    
+    public void ClassOptionsPressed()
+    {
+
     }
 }

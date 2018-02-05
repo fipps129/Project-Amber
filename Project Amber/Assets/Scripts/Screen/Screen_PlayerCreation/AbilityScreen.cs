@@ -26,10 +26,24 @@ public class AbilityScreen : Screen_Base {
 
     public override void NextScreen()
     {
+        RagePowers.InitBonuses();
+        foreach(Bonus b in RagePowers.AllPowers["Mega Strength"].bonuses)
+        {
+
+            Debug.Log(b.b_name + "  " + b.value);
+        }
+
+        foreach (Bonus b in RagePowers.AllPowers["Supa Smart"].bonuses)
+        {
+
+            Debug.Log(b.b_name + "  " + b.value);
+        }
+
         Dictionary<string, List<int>> retList = new Dictionary<string, List<int>>();
         retList = pointCal.GetScores();
         ScoreList = retList["scores"];
         ModifierList = retList["modifiers"];
+
 
         SaveManager.manager.character.str_score = ScoreList[0];
         SaveManager.manager.character.dex_score = ScoreList[1];
@@ -44,6 +58,8 @@ public class AbilityScreen : Screen_Base {
         SaveManager.manager.character.int_mod = ModifierList[3];
         SaveManager.manager.character.wis_mod = ModifierList[4];
         SaveManager.manager.character.cha_mod = ModifierList[5];
+
+        SaveManager.manager.SaveCharacter();
 
         sc_Player.NextPage();
     }

@@ -5,11 +5,11 @@ using EnumTypes;
 
 public class Race {
 
-    public RaceEnum raceType;
+    public RaceEnum raceType = RaceEnum.Human;
 
     public Dictionary<string, int> abilities = new Dictionary<string, int>();
 
-    public SizeEnum size;
+    public SizeEnum size = SizeEnum.Medium;
 
     public string description;
 

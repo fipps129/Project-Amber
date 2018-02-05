@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using EnumTypes;
 
 public class Utility
@@ -87,4 +88,59 @@ public class Utility
                 return "ERROR";
         }
     }
+}
+
+
+[Serializable]
+public class GenericDictionary<key, value>
+{
+    public List<key> keys;
+    public List<value> values;
+
+    public void Add(key _key, value _value)
+    {
+        keys.Add(_key);
+        values.Add(_value);
+    }
+
+    /// <summary>
+    /// Get value by key
+    /// </summary>
+    /// <param name="_key"></param>
+    /// <returns></returns>
+    public value GetValue(key _key)
+    {
+        if(this.keys.Contains(_key))
+        {
+            int index = this.keys.IndexOf(_key);
+            return values[index];
+        }
+        else
+        {
+            return default(value);
+        }
+    }
+
+    /// <summary>
+    /// Get value at index
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
+    public value GetValue(int index)
+    {
+        if (this.values.Count<index)
+        {
+            return values[index];
+        }
+        else
+        {
+            return default(value);
+        }
+    }
+}
+
+[Serializable]
+public class SerDictionary : GenericDictionary<string, GameObject>
+{
+    
 }

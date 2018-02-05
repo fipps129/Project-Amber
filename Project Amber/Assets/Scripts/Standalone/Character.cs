@@ -21,5 +21,5 @@ public class Character {
     public int wis_mod = 0;
     public int cha_mod = 0;
 
-    public Race race;
+    public Race race = new Race();
 }
