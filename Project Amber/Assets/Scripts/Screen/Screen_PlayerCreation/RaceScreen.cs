@@ -52,6 +52,9 @@ public class RaceScreen : Screen_Base {
 
     public override void LoadScreenData()
     {
+        // Testing this here 11/16/18
+        RagePowers.InitBonuses();
+
         TextAsset textFile = (TextAsset)Resources.Load("JSON_files/races", typeof(TextAsset));// (TextAsset)Resources.Load("races.json"), typeof(TextAsset));
         JSONObject raceObj = new JSONObject(textFile.ToString());
 

@@ -7,6 +7,8 @@ using EnumTypes;
 
 public class ClassScreen : Screen_Base {
 
+    public ClassChartController ClassChart;
+
     [SerializeField]
     private ScreenController_Player sc_Player;
 
@@ -30,9 +32,20 @@ public class ClassScreen : Screen_Base {
     private Image classPortrait;
 
     [SerializeField]
-    public SerDictionary classesDictionary = new SerDictionary();
+    public SerDictionary classOptionsDictionary = new SerDictionary();
 
     private Character character;
+
+    private GameObject classOptionsObj;
+
+    [SerializeField]
+    private Popup_Base popup;
+
+    [SerializeField]
+    private Text addOptButton;
+
+    [SerializeField]
+    private Text addOptButtonTwo;
 
     public override void HideMenu()
     {
@@ -51,6 +64,7 @@ public class ClassScreen : Screen_Base {
 
     public override void PreviousScreen()
     {
+        popup.ClosePopup();
         sc_Player.PrevousPage();
     }
 
@@ -93,11 +107,11 @@ public class ClassScreen : Screen_Base {
                 row.level = Int32.Parse(chartObj.GetField("level").ToString());
                 row.bab = Utility.TrimString(chartObj.GetField("bab").ToString());
                 row.fort = Int32.Parse(chartObj.GetField("fort").ToString());
-                row.reflex = Int32.Parse(chartObj.GetField("fort").ToString());
-                row.will = Int32.Parse(chartObj.GetField("fort").ToString());
+                row.reflex = Int32.Parse(chartObj.GetField("ref").ToString());
+                row.will = Int32.Parse(chartObj.GetField("will").ToString());
                 foreach (JSONObject spec in chartObj.GetField("special").list)
                 {
-                    row.specialAbilities.Add(Utility.TrimString(chartObj.GetField("bab").ToString()));
+                    row.specialAbilities.Add(Utility.TrimString(spec.ToString()));
                 }
                 _class.classChart.Add(row);
             }
@@ -123,8 +137,6 @@ public class ClassScreen : Screen_Base {
 
     public override void LoadScreen()
     {
-        Debug.Log(classList.Count);
-        Debug.Log(character.race.raceType.ToString());
         portraitDict.Clear();
 
         foreach(ClassEnum _class in classList.Keys)
@@ -141,6 +153,8 @@ public class ClassScreen : Screen_Base {
 
     public void DropdownValueChanged()
     {
+        popup.ClosePopup();
+
         if (classDropdown.IsTitle())
             return;
         currentClass = (ClassEnum)(classDropdown.dropDown.value - 1);
@@ -183,8 +197,72 @@ public class ClassScreen : Screen_Base {
         classPortrait.sprite = portraitDict[classList[currentClass].classType];
     }
     
+    private void SetAddOptButtonText()
+    {
+        switch(currentClass)
+        {
+            case ClassEnum.Barbarian:
+                addOptButton.text = "Rage Powers";
+                addOptButtonTwo.text = "";
+                break;
+            case ClassEnum.Bard:
+                break;
+            case ClassEnum.Cleric:
+                break;
+            case ClassEnum.Druid:
+                break;
+            case ClassEnum.Fighter:
+                break;
+            case ClassEnum.Monk:
+                break;
+            case ClassEnum.Paladin:
+                break;
+            case ClassEnum.Ranger:
+                break;
+            case ClassEnum.Rogue:
+                break;
+            case ClassEnum.Sorcerer:
+                break;
+            case ClassEnum.Wizard:
+                break;
+        }
+    }
+
     public void ClassOptionsPressed()
     {
-
+        popup.ClosePopup(); 
+         classOptionsObj = GameObject.Instantiate(classOptionsDictionary.GetValue(currentClass.ToString()), this.transform, false) as GameObject;
     }
+
+    public void ShowAbilityPopup(Text abilityText)
+    {
+        string descText = classList[currentClass].featureDict[abilityText.text];
+        popup.ShowPopup(abilityText.text, descText);
+    }
+
+    public void ShowAbilityPopup(String abilityText)
+    {
+        string descText = classList[currentClass].featureDict[abilityText];
+        popup.ShowPopup(abilityText, descText);
+    }
+
+    public void ShowSkillPopup(Text skillText)
+    {
+        string skillName = skillText.text.Substring(0, skillText.text.Length - 6);
+        Skill sk = classList[currentClass].skills.Find(item => item.Name == skillName);
+
+        string descText = sk.description;
+        popup.ShowPopup(skillText.text, descText);
+    }
+
+    public void ShowClassChart()
+    {
+        ClassChart.ShowClassChart();
+    }
+
+    public Class GetCurrentClass()
+    {
+        return classList[currentClass];
+    }
+
 }

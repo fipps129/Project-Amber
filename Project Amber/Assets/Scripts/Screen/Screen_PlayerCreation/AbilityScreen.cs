@@ -26,7 +26,7 @@ public class AbilityScreen : Screen_Base {
 
     public override void NextScreen()
     {
-        RagePowers.InitBonuses();
+
         foreach(Bonus b in RagePowers.AllPowers["Mega Strength"].bonuses)
         {
 

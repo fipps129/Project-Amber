@@ -13,6 +13,7 @@ public class SaveManager : MonoBehaviour
     JSONObject abilityAr = new JSONObject(JSONObject.Type.ARRAY);
 
     private string savePath = "";
+    private string savePathBk = "";
 
     // Use this for initialization
     void Awake()
@@ -27,6 +28,7 @@ public class SaveManager : MonoBehaviour
         character.name = "New Character";
         CreateSaveObject();
         savePath = "Assets/Resources/" + character.name + ".json";
+        savePathBk = "Assets/Resources/" + character.name + "_BK.json";
 
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(savePath, true);
@@ -69,7 +71,8 @@ public class SaveManager : MonoBehaviour
         {
             Debug.LogWarning("The savePath could not be found \n. This will only be a problem after the character creation is complete.");
         }
-
+        File.WriteAllText(savePathBk, File.ReadAllText(savePath));
+        File.WriteAllText(savePath, "");
         StreamWriter writer = new StreamWriter(savePath, true);
         writer.WriteLine(saveObj.ToString());
         writer.Close();

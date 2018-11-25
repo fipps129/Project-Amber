@@ -106,6 +106,8 @@
     <Compile Include="Assets\Scripts\Screen\Screen_CharacterSheet\GeneralScreen.cs" />
     <Compile Include="Assets\Scripts\Screen\Screen_CharacterSheet\ScreenController_CharacterSheet.cs" />
     <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\AbilityScreen.cs" />
+    <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\Class Charts\ClassChartController.cs" />
+    <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\Class Charts\ClassChartRow.cs" />
     <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\ClassScreen.cs" />
     <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\PointCalculator.cs" />
     <Compile Include="Assets\Scripts\Screen\Screen_PlayerCreation\RaceChart.cs" />
